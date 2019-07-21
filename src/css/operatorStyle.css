@@ -1,0 +1,92 @@
+
+.sidebar{
+    		width:25%;
+    		bottom:5%;
+    		position: absolute;
+    		left: 5%;
+    		top:10%;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    	}
+        #search{
+            margin: 5%;
+            top:2%;
+            width: 40%;
+            position: absolute;
+            border-radius: 10px;
+        }
+    	main{
+    		width:60%;
+    		position: absolute;
+    		right: 5%;
+    		top:10%;
+            bottom: 5%;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    	}
+    	#chat{
+    		width: 45%;
+    		height: 90%;
+    		background-color: #343a40;
+    		position: absolute;
+    		left: 5%;
+    		top:5%;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    	}
+        #sort{
+            margin: 5%;
+            top:2%;
+            width: 40%;
+            left:50%;
+            position:absolute;
+            border-radius: 10px;
+        }
+    	#control{
+    		top:5%;
+    		width: 45%;
+    		height: 90%;
+    		position: absolute;
+    		right: 5%;
+    		left: 52%;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    	}
+    	#usersList{
+    		width: 90%;
+    		height: 80%;
+            margin: 5%;
+            top:10%;
+    		position: absolute;
+            overflow: scroll;
+
+    	}
+    	#dialog{
+    		top:5%;
+    		width: 90%;
+    		height: 70%;
+            margin: 5%;
+    		position: absolute;
+            overflow: scroll;
+            background-color: white;
+    	}
+        #message{
+            bottom: 10%;
+            width: 90%;
+            height: 10%;
+            border: 1px solid black;
+            position: absolute;
+            left: 5%;
+        }
+        #submitButton{
+            bottom: 5%;
+            width: 90%;
+            height: 5%;
+            position: absolute;
+            left: 5%;
+        }
+        .userDiv{
+            width: "8rm";
+            left: 5%;
+            margin: 2%;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.5);
+        }
+        

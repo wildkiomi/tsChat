@@ -1,0 +1,42 @@
+<!DOCTYPE html><html lang=en><head><meta charset=UTF-8><title>Random site</title></head><body><b>something blablabla</b> <a href=configuration.html>chat configuration</a> <a href=operator.html>operator's dashboard</a><script src=https://cdn.firebase.com/js/client/2.4.2/firebase.js></script><script src=../js/chat.js></script><script type=text/javascript>(function(){new ChatWidget({chatTitle:"Chat",botName:"Bot",chatUrl:"",cssName: "chat2",position: "right",
+  requests: "fetch",allowMinimize:true,allowDrag:true,
+  requireName:false,showDateTime:true});})();</script></body></html><!DOCTYPE html><html lang=en><head><meta charset=UTF-8><title>Chat configurator</title><style>
+    	.mainForm{
+    	    top: 20px;
+    	    width: 40%;
+    		border: solid 3px black;
+    		padding-left: 50px;
+    	}
+    	p{
+    		text-align: left;
+    	}
+    	input[type=text]{
+    		width: 230px;
+    	}
+    	textarea{
+    		width: 300px;
+    		height: 180px;
+    	}
+    </style></head><body><form class=mainForm name=mainForm onchange=changeCode()><p><b>Chat configurator</b></p><p>Chat title <input type=text name=chatTitle value=Chat></p><p>Bot name <input type=text name=botName value=Bot></p><p>Chat URL <input type=text name=chatUrl value=https://wildkiomichat.firebaseio.com></p><p>Css class <input type=text name=cssName value=chat1></p><p>Position<select name=position><option value=right>right</option><option value=left>left</option></select></p><p>Network <input type=radio name=network value=XHR>XHR<input type=radio name=network value=fetch>fetch</p><p>UI <input type=checkbox name=minimize value="Allow to minimize">Allow to minimize</p><p><input type=checkbox name=drag value="Allow to drag">Allow to drag</p><p><input type=checkbox name=needName value="Require name">Require name</p><p><input type=checkbox name=showDate value="Show date/time">Show date/time</p><p>Use next code: <textarea id=chatCode></textarea></p></form><script>
+	var configForm=document.forms.mainForm;
+	var chatCode=configForm.elements.chatCode;
+	var minCode="<script src=\"blablabla\"><\/script>";
+	chatCode.innerHTML=minCode;
+	function changeCode() {
+		chatCode.innerHTML=minCode+'\r\n<script>'
+		+'function(){\r\nnew ChatWidget({\r\n'
+		+'chatTitle: '+configForm.elements.chatTitle.value+',\r\n'
+		+'botName: '+configForm.elements.botName.value+',\r\n'
+		+'chatUrl: '+configForm.elements.chatUrl.value+',\r\n'
+		+'cssName: '+configForm.elements.cssName.value+',\r\n'
+		+'position: '+configForm.elements.position.value+',\r\n'
+		+'requests: '+configForm.elements.network.value+',\r\n'
+		+'allowMinimize: '+configForm.elements.minimize.checked+',\r\n'
+		+'allowDrag: '+configForm.elements.drag.checked+',\r\n'
+		+'requireName: '+configForm.elements.needName.checked+',\r\n'
+		+'showDateTime: '+configForm.elements.showDate.checked+',\r\n'
+		+'})}();\r\n'+'<\/script>';
+	};
+</script></body></html><!DOCTYPE html><html lang=en><head><meta charset=UTF-8><title>Random site</title><link rel=stylesheet type=text/css href=chatStyle.css></head><body><b>something blablabla</b> <a href=configuration.html>chat configuration</a> <a href=operator.html>operator's dashboard</a><script src=../js/chat.js></script><script type=text/javascript>(function(){new ChatWidget({chatTitle:"Chat",botName:"Bot",chatUrl:"",cssName: "chat2",position: "right",
+  requests: "fetch",allowMinimize:true,allowDrag:true,
+  requireName:false,showDateTime:true});})();</script></body></html><!DOCTYPE html><html lang=en><head><meta charset=UTF-8><title>Operator's dashboard</title><link href=../css/operatorStyle.css rel=stylesheet></head><body><header>Operator's dashboard</header><div class=sidebar><aside><input type=search id=search value=search><p></p></aside><aside><select name=sort><option value=sortBy>Sort by</option><option value=status>name</option><option value=status>status</option></select></aside><aside><div id=usersList></div></aside></div><main><div id=chat>Chat<div id=dialog></div><input type=text id=message> <button type=submit id=submitButton>Send</button></div><div id=control>Control</div></main><script src=https://cdn.firebase.com/js/client/2.4.2/firebase.js></script><script type=text/javascript src=../js/operator.js></script></body></html>

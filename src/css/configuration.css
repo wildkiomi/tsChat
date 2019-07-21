@@ -1,0 +1,21 @@
+.mainForm{
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    		padding-left: 50px;
+            margin-top: 2%;
+            margin-left: 20%;
+            margin-right: 20%; 
+    	}
+    	p{
+    		text-align: left;
+    	}
+        select{
+            max-width: 20%;
+        }
+
+    	input[type=text]{
+    		width: 230px;
+    	}
+    	textarea{
+    		width: 300px;
+    		height: 180px;
+    	}

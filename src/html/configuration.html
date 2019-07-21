@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat configurator</title>
+   <link rel="stylesheet" href="../css/configuration.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+     </head>
+<body style="background-color:#6c757d">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  		<a class="navbar-brand" href="#">Chat</a>
+  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    	<span class="navbar-toggler-icon"></span>
+  		</button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#"><span class="sr-only">(current)</span>Configurator</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Dashboard</a>
+      </li>
+  </ul>
+</div>
+</nav>
+
+	<form class="mainForm rounded bg-danger" name="mainForm"  onchange="changeCode()">
+		<p ><b>Chat configurator</b></p>
+		<p>
+			<div class="input-group flex-nowrap">
+				  <div class="input-group-prepend">
+				    <span class="input-group-text" id="addon-wrapping">Chat title</span>
+				  </div>
+  				<input type="text"  name="chatTitle" value="Chat" placeholder="Chat" aria-label="Chat" aria-describedby="addon-wrapping">
+  			</div>
+  		</p>
+		<p>
+			<div class="input-group flex-nowrap">
+				  <div class="input-group-prepend">
+				    <span class="input-group-text" id="addon-wrapping">Bot name</span>
+				  </div>
+  				<input type="text"  name="botName" placeholder="Bot" value="Bot" aria-label="Bot" aria-describedby="addon-wrapping">
+  			</div>
+  		</p>
+		<p>
+			<div class="input-group flex-nowrap">
+				  <div class="input-group-prepend">
+				    <span class="input-group-text" id="addon-wrapping">Chat URL</span>
+				  </div>
+				  <input type="text" name="chatUrl" value="https://wildkiomichat.firebaseio.com" aria-label="https://wildkiomichat.firebaseio.com" aria-describedby="addon-wrapping">
+			</div>
+		</p>
+		<p>
+			<div class="input-group mb-3">
+				  <div class="input-group-prepend">
+				    <label class="input-group-text" for="inputGroupSelect02">Style</label>
+				  </div>
+				  <select class="custom-select" id="inputGroupSelect02" name="cssName" >
+					<option selected value="danger">danger</option>
+	        		<option value="primary" >primary</option>
+	  				<option value="warning">warning</option>
+	  				<option value="success">success</option>
+			</select>
+			</div>
+		<p>
+			<div class="input-group mb-3">
+  				<div class="input-group-prepend">
+    				<label class="input-group-text" for="inputGroupSelect01">Position</label>
+  				</div>
+			<select class="custom-select" name="position" id="inputGroupSelect01">
+				<option selected value="right">right</option>
+	  			<option value="left">left</option>
+			</select>
+			</div>
+		</p>
+		<p>Network <input type="radio" name="network" value="XHR" >XHR<input type="radio" name="network" value="fetch" >fetch</p>
+		<p>UI </p>
+		<p>
+			<div class="custom-control custom-switch">
+				<input type="checkbox" name="minimize" id="customSwitch1" class="custom-control-input" value="Allow to minimize">
+				<label class="custom-control-label" for="customSwitch1">Allow to minimize</label>
+			</div>
+		</p>
+		<p>
+			<div class="custom-control custom-switch">
+				<input type="checkbox" name="drag" value="Allow to drag" id="customSwitch2" class="custom-control-input">
+				<label class="custom-control-label" for="customSwitch2">Allow to drag</label>
+			</div>
+		</p>
+		<p>
+			<div class="custom-control custom-switch">
+				<input type="checkbox" name="needName" value="Require name" id="customSwitch3" class="custom-control-input">
+				<label class="custom-control-label" for="customSwitch3">Require name</label>
+			</div>
+		</p>
+		<p>
+			<div class="custom-control custom-switch">
+				<input type="checkbox" name="showDate" value="Show date/time" id="customSwitch4" class="custom-control-input">
+				<label class="custom-control-label" for="customSwitch4">Show date/time</label>
+			</div>
+		</p>
+		<p>Use next code: <textarea id="chatCode"></textarea></p>
+	</form>
+
+<script>
+	var configForm=document.forms.mainForm;
+	var chatCode=configForm.elements.chatCode;
+	var minCode="<script src=\"blablabla\"><\/script>";
+	chatCode.innerHTML=minCode;
+	function changeCode() {
+		chatCode.innerHTML=minCode+'\r\n<script>'
+		+'function(){\r\nnew ChatWidget({\r\n'
+		+'chatTitle: '+configForm.elements.chatTitle.value+',\r\n'
+		+'botName: '+configForm.elements.botName.value+',\r\n'
+		+'chatUrl: '+configForm.elements.chatUrl.value+',\r\n'
+		+'cssName: '+configForm.elements.cssName.value+',\r\n'
+		+'position: '+configForm.elements.position.value+',\r\n'
+		+'requests: '+configForm.elements.network.value+',\r\n'
+		+'allowMinimize: '+configForm.elements.minimize.checked+',\r\n'
+		+'allowDrag: '+configForm.elements.drag.checked+',\r\n'
+		+'requireName: '+configForm.elements.needName.checked+',\r\n'
+		+'showDateTime: '+configForm.elements.showDate.checked+',\r\n'
+		+'})}();\r\n'+'<\/script>';
+	};
+</script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>
