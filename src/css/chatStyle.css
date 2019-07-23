@@ -1,9 +1,9 @@
 .chatHeader{
-	position: absolute;
+	/*position: absolute;
 	top: 0px;
 	height: 30px;
 	width: 250px;
-    border-radius: 5px;
+    border-radius: 5px;*/
 } 
 .chatContent{
 	position: absolute;
@@ -15,6 +15,9 @@
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
 } 
+span{
+    display: block;
+}
 .chatTexts{
 	text-align: justify;
 } 

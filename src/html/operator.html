@@ -15,13 +15,13 @@
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="#">About</a>
+        <a class="nav-link" href="../index.html">About</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Configurator</a>
+        <a class="nav-link" href="configuration.html">Configurator</a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="#"><span class="sr-only">(current)</span>Dashboard</a>
+        <a class="nav-link" href="operator.html"><span class="sr-only">(current)</span>Dashboard</a>
       </li>
   </ul>
 </div>
@@ -30,14 +30,19 @@
 
 	<div class="sidebar rounded bg-dark">
 		<aside>
-			<input type="search"id="search" value="search"></p>
+			<div id="divSearch">
+				<input type="search"id="search" value="search" onchange="searchUser()">
+			</div>
 		</aside>
 		<aside>
-			<select name="sort" id="sort" class="custom-select custom-select-sm" >
-		        	<option value="sortBy">Sort by</option>
-		  			<option value="status">name</option>
-		  			<option value="status">status</option>
-			</select>
+			<form name="sortForm">
+				<select name="sort" id="sort" class="custom-select custom-select-sm" onchange="sortUsers()">
+			        	<option value="sortBy">Sort by</option>
+			  			<option value="a-j">a-j</option>
+			  			<option value="k-q">k-q</option>
+			  			<option value="r-z">r-z</option>
+				</select>
+			</form>
 		</aside>
 		<aside>
 			<div id="usersList" class="bg-white rounded"></div>
@@ -50,12 +55,40 @@
 			<input type="text" id="message">
 			<button type="submit" id="submitButton" class="btn btn-danger">Send</button>
 		</div>
-		<div id="control" class="rounded bg-dark"><p class="text-white">Control</p></div>
+		<div id="control" class="rounded bg-dark"><p class="text-white">Control</p>
+			<div id=logButtons>
+				<span class="badge badge-primary" id="spanCommand">Command</span>
+				<form name="commandForm" onchange="getCommandInterface()">
+					<select name="command" id="command" class="custom-select custom-select-sm">
+						<option value="selectCommand">Select command</option>
+						<option value="getInfo">get Info</option>
+						<option value="command2">command 2</option>
+					</select>
+				</form>
+				<div id="check">
+				<div class="form-check form-check-inline">
+  				<input class="form-check-input" type="checkbox" id="param1" value="option1">
+				  <label id="label1" class="form-check-label" for="param1">Param1</label>
+				</div>
+				<div class="form-check form-check-inline">
+				  <input class="form-check-input" type="checkbox" id="param2" value="option2">
+				  <label id="label2" class="form-check-label" for="param2">Param2</label>
+				</div>
+				<div class="form-check form-check-inline">
+				  <input class="form-check-input" type="checkbox" id="param3" value="option3">
+				  <label id="label3" class="form-check-label" for="param3">Param3</label>
+				</div>
+				<button type="submit" id="run" class="btn btn-primary btn-sm">Run</button>
+			</div>
+		</div>
+			<div id="commandLog" class="rounded"></div>
+		</div>
 		
 	</main>
     <script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
 <script type="text/javascript" src="../js/operator.js"></script>
 
+<script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

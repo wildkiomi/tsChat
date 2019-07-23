@@ -14,6 +14,17 @@
             position: absolute;
             border-radius: 10px;
         }
+        .userSearch{
+            position: absolute;
+            padding: 1px;
+            margin: 5%;
+            top:8%;
+            width: 40%;
+            background-color: #dc3545;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            border-radius: 10px;
+        }
+
     	main{
     		width:60%;
     		position: absolute;
@@ -23,11 +34,11 @@
             box-shadow: 0 0 10px rgba(0,0,0,0.5);
     	}
     	#chat{
-    		width: 45%;
+    		width: 35%;
     		height: 90%;
     		background-color: #343a40;
     		position: absolute;
-    		left: 5%;
+    		left: 2%;
     		top:5%;
             box-shadow: 0 0 10px rgba(0,0,0,0.5);
     	}
@@ -41,18 +52,18 @@
         }
     	#control{
     		top:5%;
-    		width: 45%;
+    		width: 60%;
     		height: 90%;
     		position: absolute;
     		right: 5%;
-    		left: 52%;
+    		left: 38%;
             box-shadow: 0 0 10px rgba(0,0,0,0.5);
     	}
     	#usersList{
     		width: 90%;
     		height: 80%;
             margin: 5%;
-            top:10%;
+            top:13%;
     		position: absolute;
             overflow: scroll;
 
@@ -66,6 +77,62 @@
             overflow: scroll;
             background-color: white;
     	}
+        p{
+            padding: 10px;
+        }
+        #commandLog{
+            top: 14%;
+            bottom:2%;
+            width: 90%;
+            margin: 5%;
+            position: absolute;
+            overflow: scroll;
+            background-color: white;
+        }
+        #spanCommand{
+            position: absolute;
+            top:10%;
+            left:0.5%;
+        }
+        #command{
+            width: 28%;
+            margin: 1%;
+            position: absolute;
+            top:8%;
+            left:13%;
+        }
+        #run{
+           
+        }
+        .form-check-label{
+            margin: 10%;
+        }
+        .form-check-input{
+            position: absolute;
+            left :0%;
+            top:0%;
+            margin: 1%;
+        }
+        #param3{
+            position: absolute;
+            right:15%;
+
+        }
+        #param2{
+            position: absolute;
+            right:29%;
+        }
+        #param1{
+            position: absolute;
+            right:43%;
+        }
+        #check{
+            color:white;
+            position: absolute;
+            left: 42%;
+            top:9%;
+            width: 53%;
+        }
         #message{
             bottom: 10%;
             width: 90%;
@@ -82,11 +149,16 @@
             left: 5%;
         }
         .userDiv{
-            width: "8rm";
+            width: "6rm";
             left: 5%;
             margin: 2%;
             padding: 10px;
             border-radius: 10px;
             box-shadow: 0 0 5px rgba(0,0,0,0.5);
         }
-        
+        .text-wrap{
+            display: block;
+            margin: 2%;
+            box-shadow: 0 0 5px rgba(0,0,0,0.5);
+        }
+       

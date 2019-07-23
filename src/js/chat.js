@@ -10,7 +10,14 @@ var loginForm;
 var text;
 var initObj={};
 var user={};
-var ws;
+
+ws = new WebSocket("ws://localhost:8080");
+  console.log("connect");
+  ws.onopen=function(e){console.log("connected to server")};
+
+var addMessageToDb;
+var url='https://wildkiomichat.firebaseio.com';
+var database = new Firebase(url);
 
 
 function ChatWidget({chatTitle,botName,chatUrl,cssName,position,
@@ -19,7 +26,7 @@ function ChatWidget({chatTitle,botName,chatUrl,cssName,position,
 
   this.chatTitle=chatTitle||"Chat";
   this.botName=botName||"Bot";
-  this.chatUrl=chatUrl||"https://wildkiomichat.firebaseapp.com/";
+  this.chatUrl=chatUrl||"https://wildkiomichat.firebaseio.com";
   this.cssName=cssName||"primary";
   this.position=position||"right";
   this.requests=requests||"fetch";
@@ -33,17 +40,16 @@ function ChatWidget({chatTitle,botName,chatUrl,cssName,position,
   initializeChat();
   addCss();
   returnToPreviousState();
-  initializeWs();
+  //initializeWs();
   
 };
 
 function initializeChat(chatTitle,botName){
-
   chatWidget = document.createElement("div");
   chatWidget.classList.add("chatWidget","card");
   chatWidget.innerHTML =
-    '<div id="minChat" class="chatHeader"><span id="titleOfChat" class="text-white">'+initObj.chatTitle+'</span>' +
-    '<input id="turnChat" class="turnButton btn btn-sm" value="_" type="submit"/></div>' +
+    '<div id="headChat" class="chatHeader"><span id="titleOfChat" class="text-white">'+initObj.chatTitle+'</span></div>' +
+    '<button id="minChat" class="turnButton btn btn-sm" value="_" type="submit"/></button>' +
     '<div id="maxChat" class="chatContent">' +
     '<div id="print" class="printedMessages"></div>' +
     '<input id="messageBox" class="messageInput input-group-sm" type="text"/>' +
@@ -58,6 +64,15 @@ function initializeChat(chatTitle,botName){
 
   if (initObj.allowMinimize) minChat.addEventListener("click", turnChat);
 
+  /*if (initObj.requests=="fetch") 
+    addMessageToDb=function(time,writer,value,toWho){
+      addToDBviaFetch(time,writer,value,toWho);
+    }
+  else 
+    addMessageToDb=function(time,writer,value,toWho){
+      addToDBviaXhr(time,writer,value,toWho);
+    };*/
+
   if (initObj.allowDrag) dragChat();
 
   if (initObj.requireName) {
@@ -67,6 +82,7 @@ function initializeChat(chatTitle,botName){
     user=new User("anon");
     submit.addEventListener("click",sendMessage);
   };
+
   switch(initObj.cssName){
     case "danger":
       chatWidget.classList.add("bg-danger");
@@ -161,10 +177,6 @@ function returnToPreviousState() {
   };
 };
 
-function initializeWs(){
-  ws = new WebSocket("ws://localhost:8080");
-};
-
 
 function turnChat() {
   if (maxChat.hidden) {
@@ -184,9 +196,12 @@ function sendMessage() {
   newMessage = messageBox.value;
   messageBox.value="";
   var time=getRealTime();
-  if(ws.readyState === WebSocket.OPEN) 
-    {ws.send(JSON.stringify(
-      {"time":time,"writer":user.name,"value":newMessage,"toWho":"operator"}))};
+  if(ws.readyState === WebSocket.OPEN) {
+    ws.send(JSON.stringify(
+      {"time":time,
+      "writer":user.name,
+      "value":newMessage,
+      "toWho":"operator"}))};
   printMessage(time,user.name,newMessage);
   addMessageToHistory(time,user.name,newMessage,"operator");
 };
@@ -204,13 +219,15 @@ function printMessage(time,writer,value){
 
 ws.onmessage = function(e){
    var message = JSON.parse(e.data);
+   console.log("we got it");
    addMessageToHistory(message.time,message.writer,message.value,message.toWho);
    printMessage(message.time,message.writer,message.value);
  };
 
-function disconnect() {
-  ws.close();
- };
+ws.onclose=function(e){
+   changeUserStatus("offline");
+   console.log("connection closed");
+};
 
 function addMessageToHistory(time,writer,value,toWho) {
   if (sessionStorage.getItem("historyMessage") != null) {
@@ -218,6 +235,8 @@ function addMessageToHistory(time,writer,value,toWho) {
   };
     messageStorage.push({time:time,writer:writer,value:value});
     sessionStorage.setItem("historyMessage", JSON.stringify(messageStorage));
+  if (initObj.requests=="xhr"){ addToDBviaXhr(time,writer,value,toWho);}
+  else {addToDBviaFetch(time,writer,value,toWho);};
 };
 
 
@@ -241,23 +260,47 @@ function getName(){
   var name=messageBox.value;
   messageBox.value="";
   user=new User(name);
+  var time=getRealTime();
   print.removeChild(textDiv);
   ws.send(JSON.stringify({
-    "time":getRealTime(),
+    "time":time,
     "writer": user.name,
     "value":"new user",
     "toWho":"operator"
     }));
+  addToDBviaFetch(time,user.name,"new user","operator");
+  changeUserStatus("online");
   submit.removeEventListener("click",getName);
   submit.addEventListener("click",sendMessage);
 };
 
-function User(name,){
+function User(name){
   this.name=name;
 };
 
+function addToDBviaXhr(time,writer,value,toWho){
+  var xhr=new XMLHttpRequest();
+  xhr.open('POST', url+'/users/'+user.name+'/history.json', false);
+  xhr.send(JSON.stringify({time,writer,value,toWho}));
+  if (xhr.status != 200) 
+    console.log( xhr.status + ': ' + xhr.statusText ); 
+};
 
+function addToDBviaFetch(time,writer,value,toWho){
+  fetch(url+'/users/'+user.name+'/history.json', {
+    method: 'post',
+    body:JSON.stringify({time,writer,value,toWho})
+}).then(res=>res.json())
+  .then(res => console.log(res));
+};
 
+function changeUserStatus(value){
+  var xhr=new XMLHttpRequest();
+  xhr.open('POST', url+'/users/'+user.name+'/status.json', false);
+  xhr.send(JSON.stringify({"status":value}));
+  if (xhr.status != 200) 
+    console.log( xhr.status + ': ' + xhr.statusText ); 
+};
 
 
 
