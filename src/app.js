@@ -1,46 +1,58 @@
-var WebSocket = require('ws');
-var WebSocketServer = WebSocket.Server,
-wss = new WebSocketServer({port: 8080});
-var clientSockets=new Map();
+var express = require('express');
+var app = express();
+const mongoose = require("mongoose");
+const expressHbs = require("express-handlebars");
+var bodyParser = require('body-parser');
+const hbs = require("hbs");
+var session = require('express-session');
 
-function wsSend(time,writer,value,toWho) {
-	if (clientSockets.get(toWho)!=undefined){
-		var wsWho=clientSockets.get(toWho);
-			
-		 if(wsWho.readyState === WebSocket.OPEN) {
-		 	
-		 wsWho.send(JSON.stringify({
-		 "time": time,
-		 "writer": writer,
-		 "value": value,
-		 "toWho":toWho
-		 		}));
-		 console.log("sent");
-		 };
-		 
+app.engine("hbs", expressHbs(
+    {
+        layoutsDir: "views/layouts", 
+        defaultLayout: "layout",
+        extname: "hbs"
+    }
+))
 
-	};
+app.use(express.static(__dirname + "/static"));
 
-	
-};
+app.set("view engine", "hbs");
 
+hbs.registerPartials(__dirname + "/views/partials");
 
-wss.on('connection', function(ws) {
-	console.log("connected new WebSocket");
-	var register=false;
- 	ws.on('message', function(message) {
- 		console.log("get message "+message);
- 		message=JSON.parse(message);
+const userRouter = require("./routes/userRouter.js");
+const homeRouter = require("./routes/homeRouter.js");
+const messageRouter = require("./routes/messageRouter.js");
+ 
+app.use("/users", userRouter);
+app.use("/message", messageRouter);
+app.use("/", homeRouter);
 
- 	if (!register){
- 		 	clientSockets.set(message.writer,ws);
- 		 	register=true;
- 		}
- 	else{
- 			wsSend(message.time,message.writer,message.value,message.toWho);
- 		}
-	});
+app.use(function (req, res, next) {
+    res.status(404).send("Not Found")
 });
+
+mongoose.connect("mongodb://localhost:27017/usersdb", { useNewUrlParser: true }, function(err){
+    if(err) return console.log(err);
+    app.listen(8080, function(){
+        console.log("Server is ready");
+    });
+});
+
+/*ar expressWs = require('express-ws')(app);
+
+
+var processWs=require('./processWs.js');
+
+app.ws('/', function(ws, req) {
+ processWs(ws,req);
+});
+
+app.ws('/operator', (ws, req) => {
+	processWs(ws,req);
+});
+
+app.listen(8080);*/
 
  		/*if ((message.writer=="anon")&&(!register)){
  			message.writer=uuidv4();

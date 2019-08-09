@@ -24,8 +24,6 @@ var commandLog=document.getElementById("commandLog");
 var run=document.getElementById("run");
 run.addEventListener("click",function(e){
 	configureCommand();
-	runCommand();
-	printLog();
 });
 
 function getRealTime() {
@@ -168,7 +166,7 @@ function getCommandInterface(){
 };
 
 function runCommand(command,params){
-	
+	printCommand(command,params);
 };
 
 function printCommand(command,params){

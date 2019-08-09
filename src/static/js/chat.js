@@ -15,6 +15,7 @@ ws = new WebSocket("ws://localhost:8080");
   console.log("connect");
   ws.onopen=function(e){console.log("connected to server")};
 
+
 var addMessageToDb;
 var url='https://wildkiomichat.firebaseio.com';
 var database = new Firebase(url);

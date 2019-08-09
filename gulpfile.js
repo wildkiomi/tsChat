@@ -6,7 +6,8 @@ var gulp = require('gulp'),
     htmlMin=require('gulp-minify-html'),
     cssnano  = require('gulp-cssnano'), 
     rename = require('gulp-rename'),
-    jshint=require('gulp-jshint');
+    //jshint=require('gulp-jshint');
+    const imagemin = require('gulp-imagemin');
 
 
 gulp.task('browser-sync', function() { 
@@ -17,6 +18,12 @@ gulp.task('browser-sync', function() {
         notify: false 
     });
 });
+
+gulp.task('default', () =>
+    gulp.src('src/client/img/*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('build/img'))
+);
 
 gulp.task('watch', function() {
     gulp.watch('src/*.html', gulp.parallel('code')); 
@@ -31,8 +38,8 @@ gulp.task('clean', async function() {
 gulp.task('scripts', async function() {
     return gulp.src(['src/js/**/*.js'])
     .pipe(browserSync.reload({ stream: true }))
-    .pipe(jshint())
-  	.pipe(jshint.reporter('default'))
+   /* .pipe(jshint())
+  	.pipe(jshint.reporter('default'))*/
     .pipe(concat('app.js'))
     .pipe(uglify())
     .on('error', function (err) { console.log( err ) })
