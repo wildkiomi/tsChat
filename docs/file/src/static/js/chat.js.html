@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../../">
+  <title data-ice="title">src/static/js/chat.js | tschat</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="touchsoft chat"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="tschat"><meta property="twitter:description" content="touchsoft chat"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/wildkiomi/tsChat"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  </ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/static/js/chat.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">var chatWidget;
+var newMessage;
+var messageStorage = [];
+var minChat;
+var maxChat;
+var messageBox;
+var submit;
+var print;
+var loginForm;
+var text;
+var initObj={};
+var user={};
+
+ws = new WebSocket(&quot;ws://localhost:8080/chat&quot;);
+ws.onopen=function(e){console.log(&quot;connected to server&quot;)};
+
+
+var addMessageToDb;
+var url=&apos;https://wildkiomichat.firebaseio.com&apos;;
+var database = new Firebase(url);
+
+
+function ChatWidget({chatTitle,botName,chatUrl,cssName,position,
+  requests,allowMinimize,allowDrag,
+  requireName,showDateTime}) {
+
+  this.chatTitle=chatTitle||&quot;Chat&quot;;
+  this.botName=botName||&quot;Bot&quot;;
+  this.chatUrl=chatUrl||&quot;https://wildkiomichat.firebaseio.com&quot;;
+  this.cssName=cssName||&quot;primary&quot;;
+  this.position=position||&quot;right&quot;;
+  this.requests=requests||&quot;fetch&quot;;
+  this.allowMinimize=allowMinimize||false;
+  this.allowDrag=allowDrag||false;
+  this.requireName=requireName||false;
+  this.showDateTime=showDateTime||false;
+
+  initObj=this;
+
+  initializeChat();
+  addCss();
+  returnToPreviousState();
+  //initializeWs();
+  
+};
+
+function initializeChat(chatTitle,botName){
+  chatWidget = document.createElement(&quot;div&quot;);
+  chatWidget.classList.add(&quot;chatWidget&quot;,&quot;card&quot;);
+  chatWidget.innerHTML =
+    &apos;&lt;div id=&quot;headChat&quot; class=&quot;chatHeader&quot;&gt;&lt;span id=&quot;titleOfChat&quot; class=&quot;text-white&quot;&gt;&apos;+initObj.chatTitle+&apos;&lt;/span&gt;&lt;/div&gt;&apos; +
+    &apos;&lt;button id=&quot;minChat&quot; class=&quot;turnButton btn btn-sm&quot; value=&quot;_&quot; type=&quot;submit&quot;/&gt;&lt;/button&gt;&apos; +
+    &apos;&lt;div id=&quot;maxChat&quot; class=&quot;chatContent&quot;&gt;&apos; +
+    &apos;&lt;div id=&quot;print&quot; class=&quot;printedMessages&quot;&gt;&lt;/div&gt;&apos; +
+    &apos;&lt;input id=&quot;messageBox&quot; class=&quot;messageInput input-group-sm&quot; type=&quot;text&quot;/&gt;&apos; +
+    &apos;&lt;button id=&quot;submitButton&quot; type=&quot;button&quot; class=&quot;submitButton btn btn-sm&quot;&gt;Submit&lt;/button&gt;&lt;/div&gt;&apos;;
+  document.body.appendChild(chatWidget);
+
+  minChat = document.getElementById(&quot;minChat&quot;);
+  maxChat = document.getElementById(&quot;maxChat&quot;);
+  messageBox = document.getElementById(&quot;messageBox&quot;);
+  submit = document.getElementById(&quot;submitButton&quot;);
+  print = document.getElementById(&quot;print&quot;);
+
+  if (initObj.allowMinimize) minChat.addEventListener(&quot;click&quot;, turnChat);
+
+  /*if (initObj.requests==&quot;fetch&quot;) 
+    addMessageToDb=function(time,writer,value,toWho){
+      addToDBviaFetch(time,writer,value,toWho);
+    }
+  else 
+    addMessageToDb=function(time,writer,value,toWho){
+      addToDBviaXhr(time,writer,value,toWho);
+    };*/
+
+  if (initObj.allowDrag) dragChat();
+
+  if (initObj.requireName) {
+   createAuthMessage();
+  }
+  else{
+    user=new User(&quot;anon&quot;);
+    submit.addEventListener(&quot;click&quot;,sendMessage);
+  };
+
+  switch(initObj.cssName){
+    case &quot;danger&quot;:
+      chatWidget.classList.add(&quot;bg-danger&quot;);
+      submit.classList.add(&quot;btn-danger&quot;);
+      minChat.classList.add(&quot;btn-danger&quot;);
+      break;
+    case &quot;primary&quot;:
+      chatWidget.classList.add(&quot;badge-primary&quot;);
+      submit.classList.add(&quot;btn-primary&quot;);
+      minChat.classList.add(&quot;btn-primary&quot;);
+      break;
+    case &quot;success&quot;:
+      chatWidget.classList.add(&quot;badge-success&quot;);
+      submit.classList.add(&quot;btn-success&quot;);
+      minChat.classList.add(&quot;btn-success&quot;);
+      break;
+    case &quot;warning&quot;:
+      chatWidget.classList.add(&quot;badge-warning&quot;);
+      submit.classList.add(&quot;btn-warning&quot;);
+      minChat.classList.add(&quot;btn-warning&quot;);
+      break;
+  };
+
+};
+  
+
+function getCoords(elem) {
+  var box = elem.getBoundingClientRect();
+  return {
+    top: box.top + pageYOffset,
+    left: box.left + pageXOffset
+  };
+};
+
+
+function dragChat(){
+  text = document.getElementById(&quot;titleOfChat&quot;);
+
+  text.onmousedown = function(e) {
+  var coords = getCoords(text);
+  var shiftX = e.pageX - coords.left;
+  var shiftY = e.pageY - coords.top;
+
+  document.body.appendChild(chatWidget);
+  moveAt(e);
+
+  chatWidget.style.zIndex = 1000;
+
+  function moveAt(e) {
+    chatWidget.style.left = e.pageX - shiftX + &quot;px&quot;;
+    chatWidget.style.top = e.pageY - shiftY + &quot;px&quot;;
+  };
+
+  document.onmousemove = function(e) {
+    moveAt(e);
+  };
+
+  text.onmouseup = function() {
+    document.onmousemove = null;
+    text.onmouseup = null;
+  };
+};
+
+chatWidget.ondragstart = function() {
+  return false;
+};
+
+};
+
+function addCss() {
+  var style = document.createElement(&quot;link&quot;);
+  style.rel= &apos;stylesheet&apos;;
+  style.href = &apos;css/chatStyle.css&apos;; 
+  style.type = &apos;text/css&apos;;
+  document.head.appendChild(style);
+};
+
+function returnToPreviousState() {
+  maxChat.hidden = !!localStorage.getItem(&quot;hiddenChat&quot;);
+  chatWidget.style.height = localStorage.getItem(&quot;chatHeight&quot;);
+
+  var historyMessage = JSON.parse(sessionStorage.getItem(&quot;historyMessage&quot;));
+  if (sessionStorage.historyMessage != null) {
+    for (var i = 0; i &lt; historyMessage.length; i++) {
+      var message = document.createElement(&quot;div&quot;);
+      if (historyMessage[i].writer == &quot;user&quot;)
+        message.className = &quot;messageFromUser&quot;;
+      else message.className = &quot;messageFromBot&quot;;
+      message.innerHTML = historyMessage[i].text;
+      print.appendChild(message);
+    };
+  };
+};
+
+
+function turnChat() {
+  if (maxChat.hidden) {
+    maxChat.hidden = &quot;&quot;;
+    chatWidget.style.height = &quot;350px&quot;;
+    localStorage.setItem(&quot;hiddenChat&quot;, &quot;&quot;);
+    localStorage.setItem(&quot;chatHeight&quot;, &quot;350px&quot;);
+  } else {
+    maxChat.hidden = true;
+    chatWidget.style.height = &quot;30px&quot;;
+    localStorage.setItem(&quot;hiddenChat&quot;, &quot;true&quot;);
+    localStorage.setItem(&quot;chatHeight&quot;, &quot;30px&quot;);
+  };
+};
+
+function sendMessage() {
+  newMessage = messageBox.value;
+  messageBox.value=&quot;&quot;;
+  var time=getRealTime();
+  if(ws.readyState === WebSocket.OPEN) {
+    ws.send(JSON.stringify(
+      {&quot;time&quot;:time,
+      &quot;writer&quot;:user.name,
+      &quot;value&quot;:newMessage,
+      &quot;toWho&quot;:&quot;operator&quot;}))};
+  printMessage(time,user.name,newMessage);
+  addMessageToHistory(time,user.name,newMessage,&quot;operator&quot;);
+};
+
+function printMessage(time,writer,value){
+  var message = document.createElement(&quot;div&quot;);
+  message.classList.add(&quot;messageFromUser&quot;,&quot;badge-primary&quot;,&quot;badge&quot;,&quot;text-wrap&quot;);
+  if (initObj.showDateTime)
+    message.innerHTML =&apos;&lt;span class=&quot;badge badge-warning&quot;&gt;&apos;+time+&apos;&lt;/span&gt; &lt;span class=&quot;badge badge-success&quot;&gt;&apos;+writer+&apos;&lt;/span&gt; &apos;+value;
+  else
+    message.innerHTML =&apos;&lt;span class=&quot;badge badge-success&quot;&gt;&apos;+writer+&apos;&lt;/span&gt; &apos;+value;
+  print.appendChild(message);
+};
+
+
+ws.onmessage = function(e){
+   var message = JSON.parse(e.data);
+   console.log(&quot;we got it&quot;);
+   addMessageToHistory(message.time,message.writer,message.value,message.toWho);
+   printMessage(message.time,message.writer,message.value);
+ };
+
+ws.onclose=function(e){
+   changeUserStatus(&quot;offline&quot;);
+   console.log(&quot;connection closed&quot;);
+};
+
+function addMessageToHistory(time,writer,value,toWho) {
+  if (sessionStorage.getItem(&quot;historyMessage&quot;) != null) {
+    messageStorage = JSON.parse(sessionStorage.getItem(&quot;historyMessage&quot;));
+  };
+    messageStorage.push({time:time,writer:writer,value:value});
+    sessionStorage.setItem(&quot;historyMessage&quot;, JSON.stringify(messageStorage));
+  if (initObj.requests==&quot;xhr&quot;){ addToDBviaXhr(time,writer,value,toWho);}
+  else {addToDBviaFetch(time,writer,value,toWho);};
+};
+
+
+function getRealTime() {
+  var date = new Date();
+  return date.getHours() + &quot;:&quot; + date.getMinutes();
+};
+
+
+function createAuthMessage(){
+  var textDiv=document.createElement(&quot;div&quot;);
+  textDiv.id=&quot;textDiv&quot;;
+  textDiv.classList.add(&quot;alert&quot;, &quot;alert-danger&quot;);
+  textDiv.role=&quot;alert&quot;;
+  textDiv.innerHTML=&quot;&lt;p&gt;Please, enter your name to connect to operator&lt;/p&gt;&quot;
+  print.appendChild(textDiv);
+  var name=submit.addEventListener(&quot;click&quot;,getName);
+};
+
+function getName(){
+  var name=messageBox.value;
+  messageBox.value=&quot;&quot;;
+  user=new User(name);
+  var time=getRealTime();
+  print.removeChild(textDiv);
+  ws.send(JSON.stringify({
+    &quot;time&quot;:time,
+    &quot;writer&quot;: user.name,
+    &quot;value&quot;:&quot;new user&quot;,
+    &quot;toWho&quot;:&quot;operator&quot;
+    }));
+  addToDBviaFetch(time,user.name,&quot;new user&quot;,&quot;operator&quot;);
+  changeUserStatus(&quot;online&quot;);
+  submit.removeEventListener(&quot;click&quot;,getName);
+  submit.addEventListener(&quot;click&quot;,sendMessage);
+};
+
+function User(name){
+  this.name=name;
+};
+
+function addToDBviaXhr(time,writer,value,toWho){
+  var xhr=new XMLHttpRequest();
+  xhr.open(&apos;POST&apos;, url+&apos;/users/&apos;+user.name+&apos;/history.json&apos;, false);
+  xhr.send(JSON.stringify({time,writer,value,toWho}));
+  if (xhr.status != 200) 
+    console.log( xhr.status + &apos;: &apos; + xhr.statusText ); 
+};
+
+function addToDBviaFetch(time,writer,value,toWho){
+  fetch(url+&apos;/users/&apos;+user.name+&apos;/history.json&apos;, {
+    method: &apos;post&apos;,
+    body:JSON.stringify({time,writer,value,toWho})
+}).then(res=&gt;res.json())
+  .then(res =&gt; console.log(res));
+};
+
+function changeUserStatus(value){
+  var xhr=new XMLHttpRequest();
+  xhr.open(&apos;POST&apos;, url+&apos;/users/&apos;+user.name+&apos;/status.json&apos;, false);
+  xhr.send(JSON.stringify({&quot;status&quot;:value}));
+  if (xhr.status != 200) 
+    console.log( xhr.status + &apos;: &apos; + xhr.statusText ); 
+};
+
+
+
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

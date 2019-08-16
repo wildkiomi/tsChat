@@ -1,0 +1,3256 @@
+[
+  {
+    "__docId__": 1,
+    "kind": "external",
+    "name": "Infinity",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Infinity",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 2,
+    "kind": "external",
+    "name": "NaN",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~NaN",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 3,
+    "kind": "external",
+    "name": "undefined",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~undefined",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 4,
+    "kind": "external",
+    "name": "null",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~null",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 5,
+    "kind": "external",
+    "name": "Object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 6,
+    "kind": "external",
+    "name": "object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 7,
+    "kind": "external",
+    "name": "Function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 8,
+    "kind": "external",
+    "name": "function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 9,
+    "kind": "external",
+    "name": "Boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 10,
+    "kind": "external",
+    "name": "boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 11,
+    "kind": "external",
+    "name": "Symbol",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Symbol",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 12,
+    "kind": "external",
+    "name": "Error",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Error",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 13,
+    "kind": "external",
+    "name": "EvalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~EvalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 14,
+    "kind": "external",
+    "name": "InternalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~InternalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 15,
+    "kind": "external",
+    "name": "RangeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RangeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 16,
+    "kind": "external",
+    "name": "ReferenceError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ReferenceError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 17,
+    "kind": "external",
+    "name": "SyntaxError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~SyntaxError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 18,
+    "kind": "external",
+    "name": "TypeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~TypeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 19,
+    "kind": "external",
+    "name": "URIError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~URIError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 20,
+    "kind": "external",
+    "name": "Number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 21,
+    "kind": "external",
+    "name": "number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 22,
+    "kind": "external",
+    "name": "Date",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Date",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 23,
+    "kind": "external",
+    "name": "String",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~String",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 24,
+    "kind": "external",
+    "name": "string",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~string",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 25,
+    "kind": "external",
+    "name": "RegExp",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RegExp",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 26,
+    "kind": "external",
+    "name": "Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 27,
+    "kind": "external",
+    "name": "Int8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 28,
+    "kind": "external",
+    "name": "Uint8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 29,
+    "kind": "external",
+    "name": "Uint8ClampedArray",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8ClampedArray",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 30,
+    "kind": "external",
+    "name": "Int16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 31,
+    "kind": "external",
+    "name": "Uint16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 32,
+    "kind": "external",
+    "name": "Int32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 33,
+    "kind": "external",
+    "name": "Uint32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 34,
+    "kind": "external",
+    "name": "Float32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 35,
+    "kind": "external",
+    "name": "Float64Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float64Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 36,
+    "kind": "external",
+    "name": "Map",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Map",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 37,
+    "kind": "external",
+    "name": "Set",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Set",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 38,
+    "kind": "external",
+    "name": "WeakMap",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakMap",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 39,
+    "kind": "external",
+    "name": "WeakSet",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakSet",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 40,
+    "kind": "external",
+    "name": "ArrayBuffer",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ArrayBuffer",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 41,
+    "kind": "external",
+    "name": "DataView",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~DataView",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 42,
+    "kind": "external",
+    "name": "JSON",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~JSON",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 43,
+    "kind": "external",
+    "name": "Promise",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Promise",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 44,
+    "kind": "external",
+    "name": "Generator",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Generator",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 45,
+    "kind": "external",
+    "name": "GeneratorFunction",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~GeneratorFunction",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 46,
+    "kind": "external",
+    "name": "Reflect",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Reflect",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 47,
+    "kind": "external",
+    "name": "Proxy",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Proxy",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 48,
+    "kind": "file",
+    "name": "src/app.js",
+    "content": "var express = require('express');\nvar app = express();\nconst mongoose = require(\"mongoose\");\nconst expressHbs = require(\"express-handlebars\");\nvar bodyParser = require('body-parser');\nconst hbs = require(\"hbs\");\nvar expressWs = require('express-ws')(app);\nvar swaggerUi = require('swagger-ui-express'),\n\tswaggerDocument = require('../swagger.json');\n\napp.engine(\"hbs\", expressHbs(\n    {\n        layoutsDir: \"views/layouts\", \n        defaultLayout: \"layout\",\n        extname: \"hbs\"\n    }\n))\n\napp.use(express.static(__dirname + \"/static\"));\n\napp.set(\"view engine\", \"hbs\");\n\nhbs.registerPartials(__dirname + \"/views/partials\");\n\nconst userRouter = require(\"./routes/userRouter.js\");\nconst homeRouter = require(\"./routes/homeRouter.js\");\nconst messageRouter = require(\"./routes/messageRouter.js\");\nconst chatRouter=require(\"./routes/chatRouter.js\");\n\n\napp.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));\napp.use(\"/chat\",chatRouter); \napp.use(\"/users\", userRouter);\napp.use(\"/message\", messageRouter);\napp.use(\"/\", homeRouter);\n\napp.use(function (req, res, next) {\n    res.status(404).send(\"Not Found\")\n});\n\nmongoose.connect(\"mongodb://localhost:27017/usersdb\", { useNewUrlParser: true }, function(err){\n    if(err) return console.log(err);\n    app.listen(8080, function(){\n        console.log(\"Server is ready\");\n    });\n});\n\n\n \t\t/*if ((message.writer==\"anon\")&&(!register)){\n \t\t\tmessage.writer=uuidv4();\n\t\t\tvar user=new User({\n\t\t\t\tname: message.writer,\n\t\t\t\tid: message.writer\n\t\t\t});\n\t\t\tuser.save(function(err){\n\t\t\t\tif (err) throw err;\n\t\t\t\t\tconsole.log(arguments);\n\t\t\t});\n\n\n\n \t\t \tclientSockets.set(message.writer,ws);\n \t\t \tregister=true;\n \t\t}\n \t\telse if ((message.writer!=\"anon\")&&(!register)){\n \t\t\tauth(message.writer);\n \t\t\tclientSockets.set(message.writer,ws);\n\t\t\tregister=true;\n \t\t}\n \t\telse if ((message.writer==\"operator\")&&(register)){\n \t\t\t}\n \t\telse{\n \t\t\taddToDb(message.time,message.writer,message.value,message.toWho);*/\n\n \t\t\t\n\n\n/*function addToDb(time,writer,value,toWho){\n\tvar message=new History({\n\t\ttime: time,\n\t\twriter: writer,\n\t\tvalue: value,\n\t\ttoWho: toWho\n\t});\n\tmessage.save(function(err){\n\t\t\t\tif (err) throw err;\n\t\t\t\t\tconsole.log(arguments);\n\t\t\t});\n};*/\n\n/*function auth(username){\n\tvar user=new User({\n\t\t\t\tname: username,\n\t\t\t\tid: uuidv4()\n\t\t\t});\n\tuser.save(function(err){\n\t\tif (err) throw err;\n\t\t\tconsole.log(arguments);\n\t\t});\n\tif (username==\"operator\") sendDb();\n\n\n};\n\t*/\n\n\n \n /*clientSocket.on('close', function() {\n closeSocket();\n mongoose.disconnect();\n });\n\n process.on('SIGINT', function() {\n\t console.log(\"Closing things\");\n\t closeSocket('Server has disconnected');\n\t process.exit();\n });*/\n\n/*const uuidv4 = require(\"uuid/v4\");\nvar mongoose = require('mongoose');\nmongoose.connect('mongodb://localhost/tschat', {useNewUrlParser: true});\nvar User=require(\"./user\");\nvar History=require(\"./history\");\n\nvar db = mongoose.connection;\ndb.on('error', console.error.bind(console, 'connection error:'));\ndb.once('open', function() {\n  \n});*/\n\n/*var actionsWithDb=new Map();\n\tactionsWithDb.set(\"sendDb\", sendDb);\n\tactionsWithDb.set(\"sortByName\", sortByName);*/\n\t//actionsWithDb.set(\"sendDb\", sendDb);\n/*\nvar url='https://wildkiomichat.firebaseio.com';\nvar database = new Firebase(url);*/",
+    "static": true,
+    "longname": "/home/hanna/Рабочий стол/js/tsChat/src/app.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 49,
+    "kind": "variable",
+    "name": "express",
+    "memberof": "src/app.js",
+    "static": true,
+    "longname": "src/app.js~express",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/app.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 50,
+    "kind": "variable",
+    "name": "app",
+    "memberof": "src/app.js",
+    "static": true,
+    "longname": "src/app.js~app",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/app.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 51,
+    "kind": "variable",
+    "name": "mongoose",
+    "memberof": "src/app.js",
+    "static": true,
+    "longname": "src/app.js~mongoose",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/app.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 52,
+    "kind": "variable",
+    "name": "expressHbs",
+    "memberof": "src/app.js",
+    "static": true,
+    "longname": "src/app.js~expressHbs",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/app.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 53,
+    "kind": "variable",
+    "name": "bodyParser",
+    "memberof": "src/app.js",
+    "static": true,
+    "longname": "src/app.js~bodyParser",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/app.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 54,
+    "kind": "variable",
+    "name": "hbs",
+    "memberof": "src/app.js",
+    "static": true,
+    "longname": "src/app.js~hbs",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/app.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 55,
+    "kind": "variable",
+    "name": "expressWs",
+    "memberof": "src/app.js",
+    "static": true,
+    "longname": "src/app.js~expressWs",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/app.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 7,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 56,
+    "kind": "variable",
+    "name": "swaggerUi",
+    "memberof": "src/app.js",
+    "static": true,
+    "longname": "src/app.js~swaggerUi",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/app.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 8,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 57,
+    "kind": "variable",
+    "name": "userRouter",
+    "memberof": "src/app.js",
+    "static": true,
+    "longname": "src/app.js~userRouter",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/app.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 25,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 58,
+    "kind": "variable",
+    "name": "homeRouter",
+    "memberof": "src/app.js",
+    "static": true,
+    "longname": "src/app.js~homeRouter",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/app.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 26,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 59,
+    "kind": "variable",
+    "name": "messageRouter",
+    "memberof": "src/app.js",
+    "static": true,
+    "longname": "src/app.js~messageRouter",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/app.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 27,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 60,
+    "kind": "variable",
+    "name": "chatRouter",
+    "memberof": "src/app.js",
+    "static": true,
+    "longname": "src/app.js~chatRouter",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/app.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 28,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 61,
+    "kind": "file",
+    "name": "src/controllers/chatController.js",
+    "content": "var processWs=require('./processWs.js');\n\nexports.chatting = function(ws,req){\n  processWs(ws,req);\n};\n\nexports.operatorChat = function(ws,req){\n  processWs(ws,req);\n};\n",
+    "static": true,
+    "longname": "/home/hanna/Рабочий стол/js/tsChat/src/controllers/chatController.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 62,
+    "kind": "variable",
+    "name": "processWs",
+    "memberof": "src/controllers/chatController.js",
+    "static": true,
+    "longname": "src/controllers/chatController.js~processWs",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/controllers/chatController.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 63,
+    "kind": "function",
+    "name": "chatting",
+    "memberof": "src/controllers/chatController.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/controllers/chatController.js~chatting",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/controllers/chatController.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "params": [
+      {
+        "name": "ws",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "req",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 64,
+    "kind": "function",
+    "name": "operatorChat",
+    "memberof": "src/controllers/chatController.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/controllers/chatController.js~operatorChat",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/controllers/chatController.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 7,
+    "undocument": true,
+    "params": [
+      {
+        "name": "ws",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "req",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 65,
+    "kind": "file",
+    "name": "src/controllers/homeController.js",
+    "content": "exports.operator = function (request, response) {\n    response.render(\"operator\",{\n    \ttitle:\"Operator\",\n    \tlinkToCss:\"css/operatorStyle.css\"\n    });\n};\nexports.configurator = function (request, response) {\n    response.render(\"configurator\",{\n    \ttitle:\"Configuration\",\n    \tlinkToCss: \"css/configuration.css\"\n    });\n};\nexports.home = function (request, response) {\n    response.render(\"home\",{\n    \ttitle:\"Home\"\n    });\n};",
+    "static": true,
+    "longname": "/home/hanna/Рабочий стол/js/tsChat/src/controllers/homeController.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 66,
+    "kind": "function",
+    "name": "operator",
+    "memberof": "src/controllers/homeController.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/controllers/homeController.js~operator",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/controllers/homeController.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "params": [
+      {
+        "name": "request",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "response",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 67,
+    "kind": "function",
+    "name": "configurator",
+    "memberof": "src/controllers/homeController.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/controllers/homeController.js~configurator",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/controllers/homeController.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 7,
+    "undocument": true,
+    "params": [
+      {
+        "name": "request",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "response",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 68,
+    "kind": "function",
+    "name": "home",
+    "memberof": "src/controllers/homeController.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/controllers/homeController.js~home",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/controllers/homeController.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 13,
+    "undocument": true,
+    "params": [
+      {
+        "name": "request",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "response",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 69,
+    "kind": "file",
+    "name": "src/controllers/messageController.js",
+    "content": "const Message=require(\"../models/message.js\");\n\nexports.deleteMessage = function (request, response){\n    response.send(\"Delete message\");\n};\nexports.addMessage = function (ws, req){\n    var message = new Message(request.body);\n  \tmessage.save((err) =>{\n    if(err)\n      sendStatus(500);\n    res.sendStatus(200);\n  })\n  \t ws.on('message', function(msg) {\n    ws.send(msg);\n  });\n};\n\nexports.getMessages = function(request, response){\n    response.render(\"messages.hbs\",{\n    \ttitle:\"Messages\",\n    \tlinkToCss:\"\"\n    });\n};",
+    "static": true,
+    "longname": "/home/hanna/Рабочий стол/js/tsChat/src/controllers/messageController.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 70,
+    "kind": "variable",
+    "name": "Message",
+    "memberof": "src/controllers/messageController.js",
+    "static": true,
+    "longname": "src/controllers/messageController.js~Message",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/controllers/messageController.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 71,
+    "kind": "function",
+    "name": "deleteMessage",
+    "memberof": "src/controllers/messageController.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/controllers/messageController.js~deleteMessage",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/controllers/messageController.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "params": [
+      {
+        "name": "request",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "response",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 72,
+    "kind": "function",
+    "name": "addMessage",
+    "memberof": "src/controllers/messageController.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/controllers/messageController.js~addMessage",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/controllers/messageController.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true,
+    "params": [
+      {
+        "name": "ws",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "req",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 73,
+    "kind": "function",
+    "name": "getMessages",
+    "memberof": "src/controllers/messageController.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/controllers/messageController.js~getMessages",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/controllers/messageController.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 18,
+    "undocument": true,
+    "params": [
+      {
+        "name": "request",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "response",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 74,
+    "kind": "file",
+    "name": "src/controllers/processWs.js",
+    "content": "var wsSend=require('./sendMessage.js');\nvar clientSockets=require('../models/socketsMap.js');\n\nmodule.exports=function processWs(ws,req){\nconsole.log(\"connected new WebSocket\");\n\tvar register=false;\n \tws.on('message', function(message) {\n \t\tconsole.log(\"get message \"+message);\n \t\tmessage=JSON.parse(message);\n\n \tif (!register){\n \t\t \tclientSockets.set(message.writer,ws);\n \t\t \tregister=true;\n \t\t}\n \telse{\n \t\t\twsSend(message.time,message.writer,message.value,message.toWho);\n \t\t}\n\t});\n\n\tws.on('close', function() {\n        console.log('The connection was closed!');\n    });\n\n};",
+    "static": true,
+    "longname": "/home/hanna/Рабочий стол/js/tsChat/src/controllers/processWs.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 75,
+    "kind": "variable",
+    "name": "wsSend",
+    "memberof": "src/controllers/processWs.js",
+    "static": true,
+    "longname": "src/controllers/processWs.js~wsSend",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/controllers/processWs.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 76,
+    "kind": "variable",
+    "name": "clientSockets",
+    "memberof": "src/controllers/processWs.js",
+    "static": true,
+    "longname": "src/controllers/processWs.js~clientSockets",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/controllers/processWs.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 77,
+    "kind": "function",
+    "name": "exports",
+    "memberof": "src/controllers/processWs.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/controllers/processWs.js~exports",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/controllers/processWs.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "params": [
+      {
+        "name": "ws",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "req",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 78,
+    "kind": "file",
+    "name": "src/controllers/sendMessage.js",
+    "content": "var clientSockets=require('../models/socketsMap.js');\nmodule.exports=function wsSend(time,writer,value,toWho) {\n\tif (clientSockets.get(toWho)!=undefined){\n\t\tvar wsWho=clientSockets.get(toWho);\n\t\t\t\n\t\t wsWho.send(JSON.stringify({\n\t\t \"time\": time,\n\t\t \"writer\": writer,\n\t\t \"value\": value,\n\t\t \"toWho\":toWho\n\t\t \t\t}));\n\t\t console.log(\"sent\");\n\n\t};\n\t\n};",
+    "static": true,
+    "longname": "/home/hanna/Рабочий стол/js/tsChat/src/controllers/sendMessage.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 79,
+    "kind": "variable",
+    "name": "clientSockets",
+    "memberof": "src/controllers/sendMessage.js",
+    "static": true,
+    "longname": "src/controllers/sendMessage.js~clientSockets",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/controllers/sendMessage.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 80,
+    "kind": "function",
+    "name": "exports",
+    "memberof": "src/controllers/sendMessage.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/controllers/sendMessage.js~exports",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/controllers/sendMessage.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "params": [
+      {
+        "name": "time",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "writer",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "value",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "toWho",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 81,
+    "kind": "file",
+    "name": "src/controllers/userController.js",
+    "content": "exports.deleteUser = function (request, response){\n    response.send(\"Delete user\");\n};\nexports.changeUser = function (request, response){\n    response.send(\"Change user\");\n};\nexports.getUsers = function(request, response){\n    response.render(\"users.hbs\",{\n    \ttitle:\"Users\",\n    \tlinkToCss:\"\"\n    });\n};",
+    "static": true,
+    "longname": "/home/hanna/Рабочий стол/js/tsChat/src/controllers/userController.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 82,
+    "kind": "function",
+    "name": "deleteUser",
+    "memberof": "src/controllers/userController.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/controllers/userController.js~deleteUser",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/controllers/userController.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "params": [
+      {
+        "name": "request",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "response",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 83,
+    "kind": "function",
+    "name": "changeUser",
+    "memberof": "src/controllers/userController.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/controllers/userController.js~changeUser",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/controllers/userController.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "params": [
+      {
+        "name": "request",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "response",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 84,
+    "kind": "function",
+    "name": "getUsers",
+    "memberof": "src/controllers/userController.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/controllers/userController.js~getUsers",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/controllers/userController.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 7,
+    "undocument": true,
+    "params": [
+      {
+        "name": "request",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "response",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 85,
+    "kind": "file",
+    "name": "src/models/message.js",
+    "content": "const mongoose = require(\"mongoose\");\n \nconst Schema = mongoose.Schema;\n\nconst messageScheme = new Schema({\n    time: String,\n    writer: String,\n    value: String,\n    toWho: String\n});\nmodule.exports = mongoose.model(\"Message\", messageScheme);",
+    "static": true,
+    "longname": "/home/hanna/Рабочий стол/js/tsChat/src/models/message.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 86,
+    "kind": "variable",
+    "name": "mongoose",
+    "memberof": "src/models/message.js",
+    "static": true,
+    "longname": "src/models/message.js~mongoose",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/models/message.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 87,
+    "kind": "variable",
+    "name": "Schema",
+    "memberof": "src/models/message.js",
+    "static": true,
+    "longname": "src/models/message.js~Schema",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/models/message.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 88,
+    "kind": "variable",
+    "name": "messageScheme",
+    "memberof": "src/models/message.js",
+    "static": true,
+    "longname": "src/models/message.js~messageScheme",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/models/message.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 89,
+    "kind": "file",
+    "name": "src/models/socketsMap.js",
+    "content": "var clientSockets=new Map();\nmodule.exports=clientSockets;",
+    "static": true,
+    "longname": "/home/hanna/Рабочий стол/js/tsChat/src/models/socketsMap.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 90,
+    "kind": "variable",
+    "name": "clientSockets",
+    "memberof": "src/models/socketsMap.js",
+    "static": true,
+    "longname": "src/models/socketsMap.js~clientSockets",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/models/socketsMap.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 91,
+    "kind": "file",
+    "name": "src/routes/chatRouter.js",
+    "content": "const express = require(\"express\");\nconst chatController = require(\"../controllers/chatController.js\");\nconst chatRouter = express.Router();\n \nchatRouter.ws(\"/operator\", chatController.operatorChat);\nchatRouter.ws(\"/\", chatController.chatting);\n\nmodule.exports = chatRouter;",
+    "static": true,
+    "longname": "/home/hanna/Рабочий стол/js/tsChat/src/routes/chatRouter.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 92,
+    "kind": "variable",
+    "name": "express",
+    "memberof": "src/routes/chatRouter.js",
+    "static": true,
+    "longname": "src/routes/chatRouter.js~express",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/routes/chatRouter.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 93,
+    "kind": "variable",
+    "name": "chatController",
+    "memberof": "src/routes/chatRouter.js",
+    "static": true,
+    "longname": "src/routes/chatRouter.js~chatController",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/routes/chatRouter.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 94,
+    "kind": "variable",
+    "name": "chatRouter",
+    "memberof": "src/routes/chatRouter.js",
+    "static": true,
+    "longname": "src/routes/chatRouter.js~chatRouter",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/routes/chatRouter.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 95,
+    "kind": "file",
+    "name": "src/routes/homeRouter.js",
+    "content": "const express = require(\"express\");\nconst homeController = require(\"../controllers/homeController.js\");\nconst homeRouter = express.Router();\n \nhomeRouter.get(\"/operator\", homeController.operator);\nhomeRouter.get(\"/configurator\", homeController.configurator);\nhomeRouter.get(\"/\", homeController.home);\n\nmodule.exports = homeRouter;",
+    "static": true,
+    "longname": "/home/hanna/Рабочий стол/js/tsChat/src/routes/homeRouter.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 96,
+    "kind": "variable",
+    "name": "express",
+    "memberof": "src/routes/homeRouter.js",
+    "static": true,
+    "longname": "src/routes/homeRouter.js~express",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/routes/homeRouter.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 97,
+    "kind": "variable",
+    "name": "homeController",
+    "memberof": "src/routes/homeRouter.js",
+    "static": true,
+    "longname": "src/routes/homeRouter.js~homeController",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/routes/homeRouter.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 98,
+    "kind": "variable",
+    "name": "homeRouter",
+    "memberof": "src/routes/homeRouter.js",
+    "static": true,
+    "longname": "src/routes/homeRouter.js~homeRouter",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/routes/homeRouter.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 99,
+    "kind": "file",
+    "name": "src/routes/messageRouter.js",
+    "content": "const express = require(\"express\");\nconst messageController = require(\"../controllers/messageController.js\");\nconst messageRouter = express.Router();\n \nmessageRouter.get(\"/delete\", messageController.deleteMessage);\nmessageRouter.get(\"/add\", messageController.addMessage);\nmessageRouter.get(\"/\", messageController.getMessages);\n\nmodule.exports = messageRouter;",
+    "static": true,
+    "longname": "/home/hanna/Рабочий стол/js/tsChat/src/routes/messageRouter.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 100,
+    "kind": "variable",
+    "name": "express",
+    "memberof": "src/routes/messageRouter.js",
+    "static": true,
+    "longname": "src/routes/messageRouter.js~express",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/routes/messageRouter.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 101,
+    "kind": "variable",
+    "name": "messageController",
+    "memberof": "src/routes/messageRouter.js",
+    "static": true,
+    "longname": "src/routes/messageRouter.js~messageController",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/routes/messageRouter.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 102,
+    "kind": "variable",
+    "name": "messageRouter",
+    "memberof": "src/routes/messageRouter.js",
+    "static": true,
+    "longname": "src/routes/messageRouter.js~messageRouter",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/routes/messageRouter.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 103,
+    "kind": "file",
+    "name": "src/routes/userRouter.js",
+    "content": "const express = require(\"express\");\nconst userController = require(\"../controllers/userController.js\");\nconst userRouter = express.Router();\n \nuserRouter.use(\"/delete\", userController.deleteUser);\nuserRouter.use(\"/change\", userController.changeUser);\nuserRouter.use(\"/\", userController.getUsers);\n \nmodule.exports = userRouter;",
+    "static": true,
+    "longname": "/home/hanna/Рабочий стол/js/tsChat/src/routes/userRouter.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 104,
+    "kind": "variable",
+    "name": "express",
+    "memberof": "src/routes/userRouter.js",
+    "static": true,
+    "longname": "src/routes/userRouter.js~express",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/routes/userRouter.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 105,
+    "kind": "variable",
+    "name": "userController",
+    "memberof": "src/routes/userRouter.js",
+    "static": true,
+    "longname": "src/routes/userRouter.js~userController",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/routes/userRouter.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 106,
+    "kind": "variable",
+    "name": "userRouter",
+    "memberof": "src/routes/userRouter.js",
+    "static": true,
+    "longname": "src/routes/userRouter.js~userRouter",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/routes/userRouter.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 107,
+    "kind": "file",
+    "name": "src/static/js/chat.js",
+    "content": "var chatWidget;\nvar newMessage;\nvar messageStorage = [];\nvar minChat;\nvar maxChat;\nvar messageBox;\nvar submit;\nvar print;\nvar loginForm;\nvar text;\nvar initObj={};\nvar user={};\n\nws = new WebSocket(\"ws://localhost:8080/chat\");\nws.onopen=function(e){console.log(\"connected to server\")};\n\n\nvar addMessageToDb;\nvar url='https://wildkiomichat.firebaseio.com';\nvar database = new Firebase(url);\n\n\nfunction ChatWidget({chatTitle,botName,chatUrl,cssName,position,\n  requests,allowMinimize,allowDrag,\n  requireName,showDateTime}) {\n\n  this.chatTitle=chatTitle||\"Chat\";\n  this.botName=botName||\"Bot\";\n  this.chatUrl=chatUrl||\"https://wildkiomichat.firebaseio.com\";\n  this.cssName=cssName||\"primary\";\n  this.position=position||\"right\";\n  this.requests=requests||\"fetch\";\n  this.allowMinimize=allowMinimize||false;\n  this.allowDrag=allowDrag||false;\n  this.requireName=requireName||false;\n  this.showDateTime=showDateTime||false;\n\n  initObj=this;\n\n  initializeChat();\n  addCss();\n  returnToPreviousState();\n  //initializeWs();\n  \n};\n\nfunction initializeChat(chatTitle,botName){\n  chatWidget = document.createElement(\"div\");\n  chatWidget.classList.add(\"chatWidget\",\"card\");\n  chatWidget.innerHTML =\n    '<div id=\"headChat\" class=\"chatHeader\"><span id=\"titleOfChat\" class=\"text-white\">'+initObj.chatTitle+'</span></div>' +\n    '<button id=\"minChat\" class=\"turnButton btn btn-sm\" value=\"_\" type=\"submit\"/></button>' +\n    '<div id=\"maxChat\" class=\"chatContent\">' +\n    '<div id=\"print\" class=\"printedMessages\"></div>' +\n    '<input id=\"messageBox\" class=\"messageInput input-group-sm\" type=\"text\"/>' +\n    '<button id=\"submitButton\" type=\"button\" class=\"submitButton btn btn-sm\">Submit</button></div>';\n  document.body.appendChild(chatWidget);\n\n  minChat = document.getElementById(\"minChat\");\n  maxChat = document.getElementById(\"maxChat\");\n  messageBox = document.getElementById(\"messageBox\");\n  submit = document.getElementById(\"submitButton\");\n  print = document.getElementById(\"print\");\n\n  if (initObj.allowMinimize) minChat.addEventListener(\"click\", turnChat);\n\n  /*if (initObj.requests==\"fetch\") \n    addMessageToDb=function(time,writer,value,toWho){\n      addToDBviaFetch(time,writer,value,toWho);\n    }\n  else \n    addMessageToDb=function(time,writer,value,toWho){\n      addToDBviaXhr(time,writer,value,toWho);\n    };*/\n\n  if (initObj.allowDrag) dragChat();\n\n  if (initObj.requireName) {\n   createAuthMessage();\n  }\n  else{\n    user=new User(\"anon\");\n    submit.addEventListener(\"click\",sendMessage);\n  };\n\n  switch(initObj.cssName){\n    case \"danger\":\n      chatWidget.classList.add(\"bg-danger\");\n      submit.classList.add(\"btn-danger\");\n      minChat.classList.add(\"btn-danger\");\n      break;\n    case \"primary\":\n      chatWidget.classList.add(\"badge-primary\");\n      submit.classList.add(\"btn-primary\");\n      minChat.classList.add(\"btn-primary\");\n      break;\n    case \"success\":\n      chatWidget.classList.add(\"badge-success\");\n      submit.classList.add(\"btn-success\");\n      minChat.classList.add(\"btn-success\");\n      break;\n    case \"warning\":\n      chatWidget.classList.add(\"badge-warning\");\n      submit.classList.add(\"btn-warning\");\n      minChat.classList.add(\"btn-warning\");\n      break;\n  };\n\n};\n  \n\nfunction getCoords(elem) {\n  var box = elem.getBoundingClientRect();\n  return {\n    top: box.top + pageYOffset,\n    left: box.left + pageXOffset\n  };\n};\n\n\nfunction dragChat(){\n  text = document.getElementById(\"titleOfChat\");\n\n  text.onmousedown = function(e) {\n  var coords = getCoords(text);\n  var shiftX = e.pageX - coords.left;\n  var shiftY = e.pageY - coords.top;\n\n  document.body.appendChild(chatWidget);\n  moveAt(e);\n\n  chatWidget.style.zIndex = 1000;\n\n  function moveAt(e) {\n    chatWidget.style.left = e.pageX - shiftX + \"px\";\n    chatWidget.style.top = e.pageY - shiftY + \"px\";\n  };\n\n  document.onmousemove = function(e) {\n    moveAt(e);\n  };\n\n  text.onmouseup = function() {\n    document.onmousemove = null;\n    text.onmouseup = null;\n  };\n};\n\nchatWidget.ondragstart = function() {\n  return false;\n};\n\n};\n\nfunction addCss() {\n  var style = document.createElement(\"link\");\n  style.rel= 'stylesheet';\n  style.href = 'css/chatStyle.css'; \n  style.type = 'text/css';\n  document.head.appendChild(style);\n};\n\nfunction returnToPreviousState() {\n  maxChat.hidden = !!localStorage.getItem(\"hiddenChat\");\n  chatWidget.style.height = localStorage.getItem(\"chatHeight\");\n\n  var historyMessage = JSON.parse(sessionStorage.getItem(\"historyMessage\"));\n  if (sessionStorage.historyMessage != null) {\n    for (var i = 0; i < historyMessage.length; i++) {\n      var message = document.createElement(\"div\");\n      if (historyMessage[i].writer == \"user\")\n        message.className = \"messageFromUser\";\n      else message.className = \"messageFromBot\";\n      message.innerHTML = historyMessage[i].text;\n      print.appendChild(message);\n    };\n  };\n};\n\n\nfunction turnChat() {\n  if (maxChat.hidden) {\n    maxChat.hidden = \"\";\n    chatWidget.style.height = \"350px\";\n    localStorage.setItem(\"hiddenChat\", \"\");\n    localStorage.setItem(\"chatHeight\", \"350px\");\n  } else {\n    maxChat.hidden = true;\n    chatWidget.style.height = \"30px\";\n    localStorage.setItem(\"hiddenChat\", \"true\");\n    localStorage.setItem(\"chatHeight\", \"30px\");\n  };\n};\n\nfunction sendMessage() {\n  newMessage = messageBox.value;\n  messageBox.value=\"\";\n  var time=getRealTime();\n  if(ws.readyState === WebSocket.OPEN) {\n    ws.send(JSON.stringify(\n      {\"time\":time,\n      \"writer\":user.name,\n      \"value\":newMessage,\n      \"toWho\":\"operator\"}))};\n  printMessage(time,user.name,newMessage);\n  addMessageToHistory(time,user.name,newMessage,\"operator\");\n};\n\nfunction printMessage(time,writer,value){\n  var message = document.createElement(\"div\");\n  message.classList.add(\"messageFromUser\",\"badge-primary\",\"badge\",\"text-wrap\");\n  if (initObj.showDateTime)\n    message.innerHTML ='<span class=\"badge badge-warning\">'+time+'</span> <span class=\"badge badge-success\">'+writer+'</span> '+value;\n  else\n    message.innerHTML ='<span class=\"badge badge-success\">'+writer+'</span> '+value;\n  print.appendChild(message);\n};\n\n\nws.onmessage = function(e){\n   var message = JSON.parse(e.data);\n   console.log(\"we got it\");\n   addMessageToHistory(message.time,message.writer,message.value,message.toWho);\n   printMessage(message.time,message.writer,message.value);\n };\n\nws.onclose=function(e){\n   changeUserStatus(\"offline\");\n   console.log(\"connection closed\");\n};\n\nfunction addMessageToHistory(time,writer,value,toWho) {\n  if (sessionStorage.getItem(\"historyMessage\") != null) {\n    messageStorage = JSON.parse(sessionStorage.getItem(\"historyMessage\"));\n  };\n    messageStorage.push({time:time,writer:writer,value:value});\n    sessionStorage.setItem(\"historyMessage\", JSON.stringify(messageStorage));\n  if (initObj.requests==\"xhr\"){ addToDBviaXhr(time,writer,value,toWho);}\n  else {addToDBviaFetch(time,writer,value,toWho);};\n};\n\n\nfunction getRealTime() {\n  var date = new Date();\n  return date.getHours() + \":\" + date.getMinutes();\n};\n\n\nfunction createAuthMessage(){\n  var textDiv=document.createElement(\"div\");\n  textDiv.id=\"textDiv\";\n  textDiv.classList.add(\"alert\", \"alert-danger\");\n  textDiv.role=\"alert\";\n  textDiv.innerHTML=\"<p>Please, enter your name to connect to operator</p>\"\n  print.appendChild(textDiv);\n  var name=submit.addEventListener(\"click\",getName);\n};\n\nfunction getName(){\n  var name=messageBox.value;\n  messageBox.value=\"\";\n  user=new User(name);\n  var time=getRealTime();\n  print.removeChild(textDiv);\n  ws.send(JSON.stringify({\n    \"time\":time,\n    \"writer\": user.name,\n    \"value\":\"new user\",\n    \"toWho\":\"operator\"\n    }));\n  addToDBviaFetch(time,user.name,\"new user\",\"operator\");\n  changeUserStatus(\"online\");\n  submit.removeEventListener(\"click\",getName);\n  submit.addEventListener(\"click\",sendMessage);\n};\n\nfunction User(name){\n  this.name=name;\n};\n\nfunction addToDBviaXhr(time,writer,value,toWho){\n  var xhr=new XMLHttpRequest();\n  xhr.open('POST', url+'/users/'+user.name+'/history.json', false);\n  xhr.send(JSON.stringify({time,writer,value,toWho}));\n  if (xhr.status != 200) \n    console.log( xhr.status + ': ' + xhr.statusText ); \n};\n\nfunction addToDBviaFetch(time,writer,value,toWho){\n  fetch(url+'/users/'+user.name+'/history.json', {\n    method: 'post',\n    body:JSON.stringify({time,writer,value,toWho})\n}).then(res=>res.json())\n  .then(res => console.log(res));\n};\n\nfunction changeUserStatus(value){\n  var xhr=new XMLHttpRequest();\n  xhr.open('POST', url+'/users/'+user.name+'/status.json', false);\n  xhr.send(JSON.stringify({\"status\":value}));\n  if (xhr.status != 200) \n    console.log( xhr.status + ': ' + xhr.statusText ); \n};\n\n\n\n",
+    "static": true,
+    "longname": "/home/hanna/Рабочий стол/js/tsChat/src/static/js/chat.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 108,
+    "kind": "variable",
+    "name": "messageStorage",
+    "memberof": "src/static/js/chat.js",
+    "static": true,
+    "longname": "src/static/js/chat.js~messageStorage",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/static/js/chat.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*[]"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 109,
+    "kind": "variable",
+    "name": "initObj",
+    "memberof": "src/static/js/chat.js",
+    "static": true,
+    "longname": "src/static/js/chat.js~initObj",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/static/js/chat.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 11,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{}"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 110,
+    "kind": "variable",
+    "name": "user",
+    "memberof": "src/static/js/chat.js",
+    "static": true,
+    "longname": "src/static/js/chat.js~user",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/static/js/chat.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 12,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{}"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 111,
+    "kind": "function",
+    "name": "onopen",
+    "memberof": "src/static/js/chat.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/static/js/chat.js~onopen",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/static/js/chat.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 15,
+    "undocument": true,
+    "params": [
+      {
+        "name": "e",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 112,
+    "kind": "variable",
+    "name": "url",
+    "memberof": "src/static/js/chat.js",
+    "static": true,
+    "longname": "src/static/js/chat.js~url",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/static/js/chat.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 19,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 113,
+    "kind": "variable",
+    "name": "database",
+    "memberof": "src/static/js/chat.js",
+    "static": true,
+    "longname": "src/static/js/chat.js~database",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/static/js/chat.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 20,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 114,
+    "kind": "function",
+    "name": "ChatWidget",
+    "memberof": "src/static/js/chat.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/static/js/chat.js~ChatWidget",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/static/js/chat.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 23,
+    "undocument": true,
+    "params": [
+      {
+        "name": "objectPattern",
+        "types": [
+          "{\"chatTitle\": *, \"botName\": *, \"chatUrl\": *, \"cssName\": *, \"position\": *, \"requests\": *, \"allowMinimize\": *, \"allowDrag\": *, \"requireName\": *, \"showDateTime\": *}"
+        ],
+        "defaultRaw": {
+          "chatTitle": null,
+          "botName": null,
+          "chatUrl": null,
+          "cssName": null,
+          "position": null,
+          "requests": null,
+          "allowMinimize": null,
+          "allowDrag": null,
+          "requireName": null,
+          "showDateTime": null
+        },
+        "defaultValue": "{\"chatTitle\":null,\"botName\":null,\"chatUrl\":null,\"cssName\":null,\"position\":null,\"requests\":null,\"allowMinimize\":null,\"allowDrag\":null,\"requireName\":null,\"showDateTime\":null}"
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 115,
+    "kind": "function",
+    "name": "initializeChat",
+    "memberof": "src/static/js/chat.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/static/js/chat.js~initializeChat",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/static/js/chat.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 47,
+    "undocument": true,
+    "params": [
+      {
+        "name": "chatTitle",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "botName",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 116,
+    "kind": "function",
+    "name": "getCoords",
+    "memberof": "src/static/js/chat.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/static/js/chat.js~getCoords",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/static/js/chat.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 112,
+    "undocument": true,
+    "params": [
+      {
+        "name": "elem",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "{\"top\": *, \"left\": *}"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 117,
+    "kind": "function",
+    "name": "dragChat",
+    "memberof": "src/static/js/chat.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/static/js/chat.js~dragChat",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/static/js/chat.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 121,
+    "undocument": true,
+    "params": [],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 118,
+    "kind": "function",
+    "name": "addCss",
+    "memberof": "src/static/js/chat.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/static/js/chat.js~addCss",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/static/js/chat.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 155,
+    "undocument": true,
+    "params": [],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 119,
+    "kind": "function",
+    "name": "returnToPreviousState",
+    "memberof": "src/static/js/chat.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/static/js/chat.js~returnToPreviousState",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/static/js/chat.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 163,
+    "undocument": true,
+    "params": [],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 120,
+    "kind": "function",
+    "name": "turnChat",
+    "memberof": "src/static/js/chat.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/static/js/chat.js~turnChat",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/static/js/chat.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 181,
+    "undocument": true,
+    "params": [],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 121,
+    "kind": "function",
+    "name": "sendMessage",
+    "memberof": "src/static/js/chat.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/static/js/chat.js~sendMessage",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/static/js/chat.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 195,
+    "undocument": true,
+    "params": [],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 122,
+    "kind": "function",
+    "name": "printMessage",
+    "memberof": "src/static/js/chat.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/static/js/chat.js~printMessage",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/static/js/chat.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 209,
+    "undocument": true,
+    "params": [
+      {
+        "name": "time",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "writer",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "value",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 123,
+    "kind": "function",
+    "name": "onmessage",
+    "memberof": "src/static/js/chat.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/static/js/chat.js~onmessage",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/static/js/chat.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 220,
+    "undocument": true,
+    "params": [
+      {
+        "name": "e",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 124,
+    "kind": "function",
+    "name": "onclose",
+    "memberof": "src/static/js/chat.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/static/js/chat.js~onclose",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/static/js/chat.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 227,
+    "undocument": true,
+    "params": [
+      {
+        "name": "e",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 125,
+    "kind": "function",
+    "name": "addMessageToHistory",
+    "memberof": "src/static/js/chat.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/static/js/chat.js~addMessageToHistory",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/static/js/chat.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 232,
+    "undocument": true,
+    "params": [
+      {
+        "name": "time",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "writer",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "value",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "toWho",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 126,
+    "kind": "function",
+    "name": "getRealTime",
+    "memberof": "src/static/js/chat.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/static/js/chat.js~getRealTime",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/static/js/chat.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 243,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 127,
+    "kind": "function",
+    "name": "createAuthMessage",
+    "memberof": "src/static/js/chat.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/static/js/chat.js~createAuthMessage",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/static/js/chat.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 249,
+    "undocument": true,
+    "params": [],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 128,
+    "kind": "function",
+    "name": "getName",
+    "memberof": "src/static/js/chat.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/static/js/chat.js~getName",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/static/js/chat.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 259,
+    "undocument": true,
+    "params": [],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 129,
+    "kind": "function",
+    "name": "User",
+    "memberof": "src/static/js/chat.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/static/js/chat.js~User",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/static/js/chat.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 277,
+    "undocument": true,
+    "params": [
+      {
+        "name": "name",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 130,
+    "kind": "function",
+    "name": "addToDBviaXhr",
+    "memberof": "src/static/js/chat.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/static/js/chat.js~addToDBviaXhr",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/static/js/chat.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 281,
+    "undocument": true,
+    "params": [
+      {
+        "name": "time",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "writer",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "value",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "toWho",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 131,
+    "kind": "function",
+    "name": "addToDBviaFetch",
+    "memberof": "src/static/js/chat.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/static/js/chat.js~addToDBviaFetch",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/static/js/chat.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 289,
+    "undocument": true,
+    "params": [
+      {
+        "name": "time",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "writer",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "value",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "toWho",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 132,
+    "kind": "function",
+    "name": "changeUserStatus",
+    "memberof": "src/static/js/chat.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/static/js/chat.js~changeUserStatus",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/static/js/chat.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 297,
+    "undocument": true,
+    "params": [
+      {
+        "name": "value",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 133,
+    "kind": "file",
+    "name": "src/static/js/operator.js",
+    "content": "var ws = new WebSocket(\"ws://localhost:8080/chat/operator\");\nvar order=\"\";\n\nws.onopen=function(e){\n\tconsole.log(\"connected to server\");\n\tws.send(JSON.stringify({\"time\":getRealTime(),\"writer\":\"operator\",\"value\":\"connected\"}))\n};\n\nvar url='https://wildkiomichat.firebaseio.com';\nvar database = new Firebase(url);\nvar userList=document.getElementById(\"usersList\");\nvar userHistory=document.getElementById(\"dialog\");\nvar divSearch=document.getElementById(\"divSearch\");\nvar userSearch;\nvar currentUserName;\nvar messages=document.getElementById(\"message\");\nvar label1=document.getElementById(\"label1\");\nvar label2=document.getElementById(\"label2\");\nvar label3=document.getElementById(\"label3\");\nvar param1=document.getElementById(\"param1\");\nvar param2=document.getElementById(\"param2\");\nvar param3=document.getElementById(\"param3\");\nvar commandLog=document.getElementById(\"commandLog\");\nvar run=document.getElementById(\"run\");\nrun.addEventListener(\"click\",function(e){\n\tconfigureCommand();\n});\n\nfunction getRealTime() {\n  var date = new Date();\n  return date.getHours() + \":\" + date.getMinutes();\n};\n\nusersList.addEventListener(\"click\",function(event){\n\tcurrentUserName=event.target.id.toString();\n\tuserHistory.innerHTML=\"\";\n\tdownloadHistory(currentUserName);\n});\n\nfunction downloadHistory(name){\n\tfetch(url+'/users/'+name+'/history.json').then(res=>res.json())\n  \t.then(function(history){\n\t  \tfor (element in history){\n\t  \t\tfetch(url+'/users/'+name+'/history/'+element+'.json')\n\t  \t\t.then(res=>res.json())\n\t  \t\t.then(function(message){\n\t  \t\t\tprintMessage(message.time,message.writer,message.value);\n\t  \t\t})\t \t\n\t \t};\n  \t})\n};\n\nfunction sortUsers(){\n\tvar sortForm=document.forms.sortForm;\n\tvar sortValue=sortForm.elements.sort.value;\n\t\n\tswitch(sortValue){\n\t\tcase \"a-j\":\n\t\t\torder='?orderBy=\"$key\"&startAt=\"a\"&endAt=\"j\"';\n\t\t\tbreak;\n\t\tcase \"k-q\":\n\t\t\torder='?orderBy=\"$key\"&startAt=\"k\"&endAt=\"q\"';\n\t\t\tbreak;\n\t\tcase \"r-z\":\n\t\t\torder='?orderBy=\"$key\"&startAt=\"r\"&endAt=\"z\"';\n\t\t\tbreak;\n\t};\n};\n\ndocument.getElementById(\"submitButton\").addEventListener(\"click\", sendMessage);\n\nfunction sendMessage(){\n\tnewMessage = messages.value;\n  \tmessages.value=\"\";\n  \tvar time=getRealTime();\n  \tif(ws.readyState === WebSocket.OPEN) \n  \t\t{ws.send(JSON.stringify({\"time\":time,\"writer\":\"operator\",\"value\":newMessage,\"toWho\":currentUserName}));};\n  printMessage(time,\"you\",newMessage);\n};\n\nfunction printMessage(time,writer,value){\n\tvar userDiv=document.createElement(\"div\");\n\tuserDiv.innerHTML='<span class=\"badge badge-primary text-wrap\"><span class=\"badge badge-warning\">'+time+'</span> <span class=\"badge badge-success\">'+writer+'</span> '+value+'</span>';\n\tuserHistory.appendChild(userDiv);\n};\n\nws.onmessage = function(e){\n   var message = JSON.parse(e.data);\n   printMessage(message.time,message.writer,message.value);\n };\n\nws.onclose=function(e){\n   changeUserStatus(\"offline\");\n   console.log(\"connection closed\");\n};\n\nfunction searchUser(){\n\tvar searchString=document.getElementById(\"search\").value;\n    fetch(url+'/users.json').then(res=>res.json())\n  \t.then(function(users){\n  \t\tvar isFind=false;\n\t  \tfor (user in users){\n\t\t  \tif (user==searchString){\n\t\t  \t\tisFind=true;\n\t\t  \t\tuserSearch=document.createElement(\"div\");\n\t\t  \t\tuserSearch.classList.add(\"userSearch\");\n\t\t  \t\tuserSearch.id=user;\n\t\t  \t\tuserSearch.innerHTML='<span class=\"badge badge-success\">'+user+'</span> ';\n\t\t  \t\tdivSearch.appendChild(userSearch);\n\t\t  \t\tuserSearch.addEventListener(\"click\",function(event){\n\t\t  \t\t\tcurrentUserName=event.target.id.toString();\n\t\t  \t\t\tuserHistory.innerHTML=\"\";\n\t\t  \t\t\tdivSearch.removeChild(userSearch);\n\t\t  \t\t\tdownloadHistory(currentUserName)});\n\t\t  \t\tbreak;\n\t\t  \t}\n\t \t}; \n\t \tif (isFind==false){\n\t \t\tuserSearch=document.createElement(\"div\");\n\t\t  \tuserSearch.classList.add(\"userSearch\");\t\n\t\t  \tuserSearch.innerHTML='<span class=\"badge badge-success\">there is no such user</span> ';\n\t\t  \tdivSearch.appendChild(userSearch);\n\t\t  \tuserSearch.addEventListener(\"click\",function(event){\n\t\t  \t\t\tdivSearch.removeChild(userSearch);\n\t\t  \t});\n\t \t};\n  \t})\n\n\n};\n\nfunction longPollingToDb() {\n  var xhr = new XMLHttpRequest();\n  xhr.onreadystatechange = function() {\n    if (this.readyState != 4) return;\n    if (this.status == 200) {\n      if (this.responseText) {\n      \tusers=JSON.parse(this.responseText);\n      \tuserList.innerHTML=\"\";\n      \tfor (user in users){\n\t\t  \tvar userDiv=document.createElement(\"div\");\n\t\t  \tuserDiv.classList.add(\"userDiv\",\"bg-primary\");\n\t\t  \tuserDiv.innerHTML='<span class=\"badge badge-pill badge-success\">'+user;\n\t\t  \tuserDiv.id=user;\n\t\t  \tusersList.appendChild(userDiv);\n\t \t}; \n    };\n    longPollingToDb();\n  }\n};\n  xhr.open(\"GET\", url+'/users.json'+order, true);\n  xhr.send();\n};\n\nlongPollingToDb();\n\nfunction getCommandInterface(){\t\n\tvar commandForm=document.forms.commandForm;\n\tvar commandValue=commandForm.elements.command.value;\n\tif (commandValue==\"getInfo\"){\n\t\tlabel1.innerHTML=\"ipinfo\";\n\t\tlabel2.innerHTML=\"ip-api\";\n\t\tlabel3.innerHTML=\"geoip\";\n\t\t//param1.addEventListener(\"click\",conf);\n\n\n\t};\n\tif (commandValue==\"command2\"){\n\n\t};\n};\n\nfunction runCommand(command,params){\n\tprintCommand(command,params);\n};\n\nfunction printCommand(command,params){\n\tvar newDiv=document.createElement(\"div\");\n\tnewDiv.innerHTML='<span class=\"badge badge-warning\">'+command+'</span><span class=\"badge badge-success\">'\n\t\t+params[0]+' '\n\t\t+params[1]+' '\n\t\t+params[2]+' '\n\t\t+'</span>';\n\tcommandLog.appendChild(newDiv);\n};\n\nfunction configureCommand(){\n\tvar commandValue=commandForm.elements.command.value;\n\tvar params=[];\n\tif (param1.checked){params.push(label1.innerHTML)};\n\tif (param2.checked){params.push(label2.innerHTML)};\n\tif (param3.checked){params.push(label3.innerHTML)};\n\trunCommand(commandValue,params);\n};\n",
+    "static": true,
+    "longname": "/home/hanna/Рабочий стол/js/tsChat/src/static/js/operator.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 134,
+    "kind": "variable",
+    "name": "ws",
+    "memberof": "src/static/js/operator.js",
+    "static": true,
+    "longname": "src/static/js/operator.js~ws",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/static/js/operator.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 135,
+    "kind": "variable",
+    "name": "order",
+    "memberof": "src/static/js/operator.js",
+    "static": true,
+    "longname": "src/static/js/operator.js~order",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/static/js/operator.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 136,
+    "kind": "function",
+    "name": "onopen",
+    "memberof": "src/static/js/operator.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/static/js/operator.js~onopen",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/static/js/operator.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "params": [
+      {
+        "name": "e",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 137,
+    "kind": "variable",
+    "name": "url",
+    "memberof": "src/static/js/operator.js",
+    "static": true,
+    "longname": "src/static/js/operator.js~url",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/static/js/operator.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 9,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 138,
+    "kind": "variable",
+    "name": "database",
+    "memberof": "src/static/js/operator.js",
+    "static": true,
+    "longname": "src/static/js/operator.js~database",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/static/js/operator.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 10,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 139,
+    "kind": "variable",
+    "name": "userList",
+    "memberof": "src/static/js/operator.js",
+    "static": true,
+    "longname": "src/static/js/operator.js~userList",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/static/js/operator.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 11,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 140,
+    "kind": "variable",
+    "name": "userHistory",
+    "memberof": "src/static/js/operator.js",
+    "static": true,
+    "longname": "src/static/js/operator.js~userHistory",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/static/js/operator.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 12,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 141,
+    "kind": "variable",
+    "name": "divSearch",
+    "memberof": "src/static/js/operator.js",
+    "static": true,
+    "longname": "src/static/js/operator.js~divSearch",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/static/js/operator.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 13,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 142,
+    "kind": "variable",
+    "name": "messages",
+    "memberof": "src/static/js/operator.js",
+    "static": true,
+    "longname": "src/static/js/operator.js~messages",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/static/js/operator.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 16,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 143,
+    "kind": "variable",
+    "name": "label1",
+    "memberof": "src/static/js/operator.js",
+    "static": true,
+    "longname": "src/static/js/operator.js~label1",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/static/js/operator.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 17,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 144,
+    "kind": "variable",
+    "name": "label2",
+    "memberof": "src/static/js/operator.js",
+    "static": true,
+    "longname": "src/static/js/operator.js~label2",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/static/js/operator.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 18,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 145,
+    "kind": "variable",
+    "name": "label3",
+    "memberof": "src/static/js/operator.js",
+    "static": true,
+    "longname": "src/static/js/operator.js~label3",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/static/js/operator.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 19,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 146,
+    "kind": "variable",
+    "name": "param1",
+    "memberof": "src/static/js/operator.js",
+    "static": true,
+    "longname": "src/static/js/operator.js~param1",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/static/js/operator.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 20,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 147,
+    "kind": "variable",
+    "name": "param2",
+    "memberof": "src/static/js/operator.js",
+    "static": true,
+    "longname": "src/static/js/operator.js~param2",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/static/js/operator.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 21,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 148,
+    "kind": "variable",
+    "name": "param3",
+    "memberof": "src/static/js/operator.js",
+    "static": true,
+    "longname": "src/static/js/operator.js~param3",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/static/js/operator.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 22,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 149,
+    "kind": "variable",
+    "name": "commandLog",
+    "memberof": "src/static/js/operator.js",
+    "static": true,
+    "longname": "src/static/js/operator.js~commandLog",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/static/js/operator.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 23,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 150,
+    "kind": "variable",
+    "name": "run",
+    "memberof": "src/static/js/operator.js",
+    "static": true,
+    "longname": "src/static/js/operator.js~run",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/static/js/operator.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 24,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 151,
+    "kind": "function",
+    "name": "getRealTime",
+    "memberof": "src/static/js/operator.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/static/js/operator.js~getRealTime",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/static/js/operator.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 29,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 152,
+    "kind": "function",
+    "name": "downloadHistory",
+    "memberof": "src/static/js/operator.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/static/js/operator.js~downloadHistory",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/static/js/operator.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 40,
+    "undocument": true,
+    "params": [
+      {
+        "name": "name",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 153,
+    "kind": "function",
+    "name": "sortUsers",
+    "memberof": "src/static/js/operator.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/static/js/operator.js~sortUsers",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/static/js/operator.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 53,
+    "undocument": true,
+    "params": [],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 154,
+    "kind": "function",
+    "name": "sendMessage",
+    "memberof": "src/static/js/operator.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/static/js/operator.js~sendMessage",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/static/js/operator.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 72,
+    "undocument": true,
+    "params": [],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 155,
+    "kind": "function",
+    "name": "printMessage",
+    "memberof": "src/static/js/operator.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/static/js/operator.js~printMessage",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/static/js/operator.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 81,
+    "undocument": true,
+    "params": [
+      {
+        "name": "time",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "writer",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "value",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 156,
+    "kind": "function",
+    "name": "onmessage",
+    "memberof": "src/static/js/operator.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/static/js/operator.js~onmessage",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/static/js/operator.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 87,
+    "undocument": true,
+    "params": [
+      {
+        "name": "e",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 157,
+    "kind": "function",
+    "name": "onclose",
+    "memberof": "src/static/js/operator.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/static/js/operator.js~onclose",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/static/js/operator.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 92,
+    "undocument": true,
+    "params": [
+      {
+        "name": "e",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 158,
+    "kind": "function",
+    "name": "searchUser",
+    "memberof": "src/static/js/operator.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/static/js/operator.js~searchUser",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/static/js/operator.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 97,
+    "undocument": true,
+    "params": [],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 159,
+    "kind": "function",
+    "name": "longPollingToDb",
+    "memberof": "src/static/js/operator.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/static/js/operator.js~longPollingToDb",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/static/js/operator.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 132,
+    "undocument": true,
+    "params": [],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 160,
+    "kind": "function",
+    "name": "getCommandInterface",
+    "memberof": "src/static/js/operator.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/static/js/operator.js~getCommandInterface",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/static/js/operator.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 157,
+    "undocument": true,
+    "params": [],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 161,
+    "kind": "function",
+    "name": "runCommand",
+    "memberof": "src/static/js/operator.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/static/js/operator.js~runCommand",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/static/js/operator.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 173,
+    "undocument": true,
+    "params": [
+      {
+        "name": "command",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "params",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 162,
+    "kind": "function",
+    "name": "printCommand",
+    "memberof": "src/static/js/operator.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/static/js/operator.js~printCommand",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/static/js/operator.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 177,
+    "undocument": true,
+    "params": [
+      {
+        "name": "command",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "params",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 163,
+    "kind": "function",
+    "name": "configureCommand",
+    "memberof": "src/static/js/operator.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/static/js/operator.js~configureCommand",
+    "access": "public",
+    "export": false,
+    "importPath": "tschat/src/static/js/operator.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 187,
+    "undocument": true,
+    "params": [],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "kind": "index",
+    "content": "# tsChat\ntouchSoft javascript chat\nhttps://wildkiomi.github.io/tsChat/src/\n",
+    "longname": "/home/hanna/Рабочий стол/js/tsChat/README.md",
+    "name": "./README.md",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "packageJSON",
+    "content": "{\n  \"name\": \"tschat\",\n  \"version\": \"1.0.0\",\n  \"description\": \"touchsoft chat\",\n  \"main\": \"server.js\",\n  \"scripts\": {\n    \"test\": \"echo \\\"Error: no test specified\\\" && exit 1\",\n    \"start\": \"node server.js\"\n  },\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/wildkiomi/tsChat.git\"\n  },\n  \"keywords\": [\n    \"javascript\",\n    \"chat\",\n    \"node\"\n  ],\n  \"author\": \"wildkiomi\",\n  \"license\": \"ISC\",\n  \"bugs\": {\n    \"url\": \"https://github.com/wildkiomi/tsChat/issues\"\n  },\n  \"homepage\": \"https://github.com/wildkiomi/tsChat#readme\",\n  \"dependencies\": {\n    \"body-parser\": \"^1.19.0\",\n    \"connect-mongodb\": \"^1.1.5\",\n    \"esdoc\": \"^1.1.0\",\n    \"esdoc-standard-plugin\": \"^1.0.0\",\n    \"express\": \"^4.17.1\",\n    \"express-handlebars\": \"^3.1.0\",\n    \"express-session\": \"^1.16.2\",\n    \"express-ws\": \"^4.0.0\",\n    \"hbs\": \"^4.0.4\",\n    \"mongodb\": \"^3.2.7\",\n    \"mongodb-rest\": \"^0.10.14\",\n    \"swagger-ui-express\": \"^4.0.7\",\n    \"uuid\": \"^3.3.2\",\n    \"ws\": \"^7.1.0\"\n  },\n  \"devDependencies\": {\n    \"browser-sync\": \"^2.26.7\",\n    \"del\": \"^5.0.0\",\n    \"gulp\": \"^4.0.2\",\n    \"gulp-clean-css\": \"^4.2.0\",\n    \"gulp-concat\": \"^2.6.1\",\n    \"gulp-cssnano\": \"^2.1.3\",\n    \"gulp-htmlmin\": \"^5.0.1\",\n    \"gulp-imagemin\": \"^6.0.0\",\n    \"gulp-jshint\": \"^2.1.0\",\n    \"gulp-minify-html\": \"^1.0.6\",\n    \"gulp-rename\": \"^1.4.0\",\n    \"gulp-uglify\": \"^3.0.2\",\n    \"gulp-uglify-es\": \"^1.0.4\",\n    \"jshint\": \"^2.10.2\",\n    \"mongoose\": \"^5.6.9\"\n  }\n}\n",
+    "longname": "/home/hanna/Рабочий стол/js/tsChat/package.json",
+    "name": "package.json",
+    "static": true,
+    "access": "public"
+  }
+]

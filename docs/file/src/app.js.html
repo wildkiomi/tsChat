@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../">
+  <title data-ice="title">src/app.js | tschat</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="touchsoft chat"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="tschat"><meta property="twitter:description" content="touchsoft chat"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/wildkiomi/tsChat"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  </ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/app.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">var express = require(&apos;express&apos;);
+var app = express();
+const mongoose = require(&quot;mongoose&quot;);
+const expressHbs = require(&quot;express-handlebars&quot;);
+var bodyParser = require(&apos;body-parser&apos;);
+const hbs = require(&quot;hbs&quot;);
+var expressWs = require(&apos;express-ws&apos;)(app);
+var swaggerUi = require(&apos;swagger-ui-express&apos;),
+	swaggerDocument = require(&apos;../swagger.json&apos;);
+
+app.engine(&quot;hbs&quot;, expressHbs(
+    {
+        layoutsDir: &quot;views/layouts&quot;, 
+        defaultLayout: &quot;layout&quot;,
+        extname: &quot;hbs&quot;
+    }
+))
+
+app.use(express.static(__dirname + &quot;/static&quot;));
+
+app.set(&quot;view engine&quot;, &quot;hbs&quot;);
+
+hbs.registerPartials(__dirname + &quot;/views/partials&quot;);
+
+const userRouter = require(&quot;./routes/userRouter.js&quot;);
+const homeRouter = require(&quot;./routes/homeRouter.js&quot;);
+const messageRouter = require(&quot;./routes/messageRouter.js&quot;);
+const chatRouter=require(&quot;./routes/chatRouter.js&quot;);
+
+
+app.use(&apos;/api-docs&apos;, swaggerUi.serve, swaggerUi.setup(swaggerDocument));
+app.use(&quot;/chat&quot;,chatRouter); 
+app.use(&quot;/users&quot;, userRouter);
+app.use(&quot;/message&quot;, messageRouter);
+app.use(&quot;/&quot;, homeRouter);
+
+app.use(function (req, res, next) {
+    res.status(404).send(&quot;Not Found&quot;)
+});
+
+mongoose.connect(&quot;mongodb://localhost:27017/usersdb&quot;, { useNewUrlParser: true }, function(err){
+    if(err) return console.log(err);
+    app.listen(8080, function(){
+        console.log(&quot;Server is ready&quot;);
+    });
+});
+
+
+ 		/*if ((message.writer==&quot;anon&quot;)&amp;&amp;(!register)){
+ 			message.writer=uuidv4();
+			var user=new User({
+				name: message.writer,
+				id: message.writer
+			});
+			user.save(function(err){
+				if (err) throw err;
+					console.log(arguments);
+			});
+
+
+
+ 		 	clientSockets.set(message.writer,ws);
+ 		 	register=true;
+ 		}
+ 		else if ((message.writer!=&quot;anon&quot;)&amp;&amp;(!register)){
+ 			auth(message.writer);
+ 			clientSockets.set(message.writer,ws);
+			register=true;
+ 		}
+ 		else if ((message.writer==&quot;operator&quot;)&amp;&amp;(register)){
+ 			}
+ 		else{
+ 			addToDb(message.time,message.writer,message.value,message.toWho);*/
+
+ 			
+
+
+/*function addToDb(time,writer,value,toWho){
+	var message=new History({
+		time: time,
+		writer: writer,
+		value: value,
+		toWho: toWho
+	});
+	message.save(function(err){
+				if (err) throw err;
+					console.log(arguments);
+			});
+};*/
+
+/*function auth(username){
+	var user=new User({
+				name: username,
+				id: uuidv4()
+			});
+	user.save(function(err){
+		if (err) throw err;
+			console.log(arguments);
+		});
+	if (username==&quot;operator&quot;) sendDb();
+
+
+};
+	*/
+
+
+ 
+ /*clientSocket.on(&apos;close&apos;, function() {
+ closeSocket();
+ mongoose.disconnect();
+ });
+
+ process.on(&apos;SIGINT&apos;, function() {
+	 console.log(&quot;Closing things&quot;);
+	 closeSocket(&apos;Server has disconnected&apos;);
+	 process.exit();
+ });*/
+
+/*const uuidv4 = require(&quot;uuid/v4&quot;);
+var mongoose = require(&apos;mongoose&apos;);
+mongoose.connect(&apos;mongodb://localhost/tschat&apos;, {useNewUrlParser: true});
+var User=require(&quot;./user&quot;);
+var History=require(&quot;./history&quot;);
+
+var db = mongoose.connection;
+db.on(&apos;error&apos;, console.error.bind(console, &apos;connection error:&apos;));
+db.once(&apos;open&apos;, function() {
+  
+});*/
+
+/*var actionsWithDb=new Map();
+	actionsWithDb.set(&quot;sendDb&quot;, sendDb);
+	actionsWithDb.set(&quot;sortByName&quot;, sortByName);*/
+	//actionsWithDb.set(&quot;sendDb&quot;, sendDb);
+/*
+var url=&apos;https://wildkiomichat.firebaseio.com&apos;;
+var database = new Firebase(url);*/</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

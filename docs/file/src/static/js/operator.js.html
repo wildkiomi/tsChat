@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../../">
+  <title data-ice="title">src/static/js/operator.js | tschat</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="touchsoft chat"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="tschat"><meta property="twitter:description" content="touchsoft chat"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/wildkiomi/tsChat"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  </ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/static/js/operator.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">var ws = new WebSocket(&quot;ws://localhost:8080/chat/operator&quot;);
+var order=&quot;&quot;;
+
+ws.onopen=function(e){
+	console.log(&quot;connected to server&quot;);
+	ws.send(JSON.stringify({&quot;time&quot;:getRealTime(),&quot;writer&quot;:&quot;operator&quot;,&quot;value&quot;:&quot;connected&quot;}))
+};
+
+var url=&apos;https://wildkiomichat.firebaseio.com&apos;;
+var database = new Firebase(url);
+var userList=document.getElementById(&quot;usersList&quot;);
+var userHistory=document.getElementById(&quot;dialog&quot;);
+var divSearch=document.getElementById(&quot;divSearch&quot;);
+var userSearch;
+var currentUserName;
+var messages=document.getElementById(&quot;message&quot;);
+var label1=document.getElementById(&quot;label1&quot;);
+var label2=document.getElementById(&quot;label2&quot;);
+var label3=document.getElementById(&quot;label3&quot;);
+var param1=document.getElementById(&quot;param1&quot;);
+var param2=document.getElementById(&quot;param2&quot;);
+var param3=document.getElementById(&quot;param3&quot;);
+var commandLog=document.getElementById(&quot;commandLog&quot;);
+var run=document.getElementById(&quot;run&quot;);
+run.addEventListener(&quot;click&quot;,function(e){
+	configureCommand();
+});
+
+function getRealTime() {
+  var date = new Date();
+  return date.getHours() + &quot;:&quot; + date.getMinutes();
+};
+
+usersList.addEventListener(&quot;click&quot;,function(event){
+	currentUserName=event.target.id.toString();
+	userHistory.innerHTML=&quot;&quot;;
+	downloadHistory(currentUserName);
+});
+
+function downloadHistory(name){
+	fetch(url+&apos;/users/&apos;+name+&apos;/history.json&apos;).then(res=&gt;res.json())
+  	.then(function(history){
+	  	for (element in history){
+	  		fetch(url+&apos;/users/&apos;+name+&apos;/history/&apos;+element+&apos;.json&apos;)
+	  		.then(res=&gt;res.json())
+	  		.then(function(message){
+	  			printMessage(message.time,message.writer,message.value);
+	  		})	 	
+	 	};
+  	})
+};
+
+function sortUsers(){
+	var sortForm=document.forms.sortForm;
+	var sortValue=sortForm.elements.sort.value;
+	
+	switch(sortValue){
+		case &quot;a-j&quot;:
+			order=&apos;?orderBy=&quot;$key&quot;&amp;startAt=&quot;a&quot;&amp;endAt=&quot;j&quot;&apos;;
+			break;
+		case &quot;k-q&quot;:
+			order=&apos;?orderBy=&quot;$key&quot;&amp;startAt=&quot;k&quot;&amp;endAt=&quot;q&quot;&apos;;
+			break;
+		case &quot;r-z&quot;:
+			order=&apos;?orderBy=&quot;$key&quot;&amp;startAt=&quot;r&quot;&amp;endAt=&quot;z&quot;&apos;;
+			break;
+	};
+};
+
+document.getElementById(&quot;submitButton&quot;).addEventListener(&quot;click&quot;, sendMessage);
+
+function sendMessage(){
+	newMessage = messages.value;
+  	messages.value=&quot;&quot;;
+  	var time=getRealTime();
+  	if(ws.readyState === WebSocket.OPEN) 
+  		{ws.send(JSON.stringify({&quot;time&quot;:time,&quot;writer&quot;:&quot;operator&quot;,&quot;value&quot;:newMessage,&quot;toWho&quot;:currentUserName}));};
+  printMessage(time,&quot;you&quot;,newMessage);
+};
+
+function printMessage(time,writer,value){
+	var userDiv=document.createElement(&quot;div&quot;);
+	userDiv.innerHTML=&apos;&lt;span class=&quot;badge badge-primary text-wrap&quot;&gt;&lt;span class=&quot;badge badge-warning&quot;&gt;&apos;+time+&apos;&lt;/span&gt; &lt;span class=&quot;badge badge-success&quot;&gt;&apos;+writer+&apos;&lt;/span&gt; &apos;+value+&apos;&lt;/span&gt;&apos;;
+	userHistory.appendChild(userDiv);
+};
+
+ws.onmessage = function(e){
+   var message = JSON.parse(e.data);
+   printMessage(message.time,message.writer,message.value);
+ };
+
+ws.onclose=function(e){
+   changeUserStatus(&quot;offline&quot;);
+   console.log(&quot;connection closed&quot;);
+};
+
+function searchUser(){
+	var searchString=document.getElementById(&quot;search&quot;).value;
+    fetch(url+&apos;/users.json&apos;).then(res=&gt;res.json())
+  	.then(function(users){
+  		var isFind=false;
+	  	for (user in users){
+		  	if (user==searchString){
+		  		isFind=true;
+		  		userSearch=document.createElement(&quot;div&quot;);
+		  		userSearch.classList.add(&quot;userSearch&quot;);
+		  		userSearch.id=user;
+		  		userSearch.innerHTML=&apos;&lt;span class=&quot;badge badge-success&quot;&gt;&apos;+user+&apos;&lt;/span&gt; &apos;;
+		  		divSearch.appendChild(userSearch);
+		  		userSearch.addEventListener(&quot;click&quot;,function(event){
+		  			currentUserName=event.target.id.toString();
+		  			userHistory.innerHTML=&quot;&quot;;
+		  			divSearch.removeChild(userSearch);
+		  			downloadHistory(currentUserName)});
+		  		break;
+		  	}
+	 	}; 
+	 	if (isFind==false){
+	 		userSearch=document.createElement(&quot;div&quot;);
+		  	userSearch.classList.add(&quot;userSearch&quot;);	
+		  	userSearch.innerHTML=&apos;&lt;span class=&quot;badge badge-success&quot;&gt;there is no such user&lt;/span&gt; &apos;;
+		  	divSearch.appendChild(userSearch);
+		  	userSearch.addEventListener(&quot;click&quot;,function(event){
+		  			divSearch.removeChild(userSearch);
+		  	});
+	 	};
+  	})
+
+
+};
+
+function longPollingToDb() {
+  var xhr = new XMLHttpRequest();
+  xhr.onreadystatechange = function() {
+    if (this.readyState != 4) return;
+    if (this.status == 200) {
+      if (this.responseText) {
+      	users=JSON.parse(this.responseText);
+      	userList.innerHTML=&quot;&quot;;
+      	for (user in users){
+		  	var userDiv=document.createElement(&quot;div&quot;);
+		  	userDiv.classList.add(&quot;userDiv&quot;,&quot;bg-primary&quot;);
+		  	userDiv.innerHTML=&apos;&lt;span class=&quot;badge badge-pill badge-success&quot;&gt;&apos;+user;
+		  	userDiv.id=user;
+		  	usersList.appendChild(userDiv);
+	 	}; 
+    };
+    longPollingToDb();
+  }
+};
+  xhr.open(&quot;GET&quot;, url+&apos;/users.json&apos;+order, true);
+  xhr.send();
+};
+
+longPollingToDb();
+
+function getCommandInterface(){	
+	var commandForm=document.forms.commandForm;
+	var commandValue=commandForm.elements.command.value;
+	if (commandValue==&quot;getInfo&quot;){
+		label1.innerHTML=&quot;ipinfo&quot;;
+		label2.innerHTML=&quot;ip-api&quot;;
+		label3.innerHTML=&quot;geoip&quot;;
+		//param1.addEventListener(&quot;click&quot;,conf);
+
+
+	};
+	if (commandValue==&quot;command2&quot;){
+
+	};
+};
+
+function runCommand(command,params){
+	printCommand(command,params);
+};
+
+function printCommand(command,params){
+	var newDiv=document.createElement(&quot;div&quot;);
+	newDiv.innerHTML=&apos;&lt;span class=&quot;badge badge-warning&quot;&gt;&apos;+command+&apos;&lt;/span&gt;&lt;span class=&quot;badge badge-success&quot;&gt;&apos;
+		+params[0]+&apos; &apos;
+		+params[1]+&apos; &apos;
+		+params[2]+&apos; &apos;
+		+&apos;&lt;/span&gt;&apos;;
+	commandLog.appendChild(newDiv);
+};
+
+function configureCommand(){
+	var commandValue=commandForm.elements.command.value;
+	var params=[];
+	if (param1.checked){params.push(label1.innerHTML)};
+	if (param2.checked){params.push(label2.innerHTML)};
+	if (param3.checked){params.push(label3.innerHTML)};
+	runCommand(commandValue,params);
+};
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>
