@@ -16,9 +16,9 @@ console.log("connected new WebSocket");
  			wsSend(message.time,message.writer,message.value,message.toWho);
  		}
 	});
-/*
+
 	ws.on('close', function() {
         console.log('The connection was closed!');
-    });*/
+    });
 
 };

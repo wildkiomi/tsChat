@@ -5,6 +5,8 @@ const expressHbs = require("express-handlebars");
 var bodyParser = require('body-parser');
 const hbs = require("hbs");
 var expressWs = require('express-ws')(app);
+var swaggerUi = require('swagger-ui-express'),
+	swaggerDocument = require('../swagger.json');
 
 app.engine("hbs", expressHbs(
     {
@@ -25,6 +27,8 @@ const homeRouter = require("./routes/homeRouter.js");
 const messageRouter = require("./routes/messageRouter.js");
 const chatRouter=require("./routes/chatRouter.js");
 
+
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 app.use("/chat",chatRouter); 
 app.use("/users", userRouter);
 app.use("/message", messageRouter);
