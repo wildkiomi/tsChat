@@ -1,4 +1,4 @@
-var mongoose=require("mongoose");
+/*var mongoose=require("mongoose");
 Schema=mongoose.Schema;
 
 var schema=new Schema({
@@ -20,4 +20,4 @@ var schema=new Schema({
 	} 
 });
 
-module.exports=mongoose.model("History",schema);
+module.exports=mongoose.model("History",schema);*/

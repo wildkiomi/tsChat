@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 const expressHbs = require("express-handlebars");
 var bodyParser = require('body-parser');
 const hbs = require("hbs");
-var session = require('express-session');
+var expressWs = require('express-ws')(app);
 
 app.engine("hbs", expressHbs(
     {
@@ -23,7 +23,9 @@ hbs.registerPartials(__dirname + "/views/partials");
 const userRouter = require("./routes/userRouter.js");
 const homeRouter = require("./routes/homeRouter.js");
 const messageRouter = require("./routes/messageRouter.js");
- 
+const chatRouter=require("./routes/chatRouter.js");
+
+app.use("/chat",chatRouter); 
 app.use("/users", userRouter);
 app.use("/message", messageRouter);
 app.use("/", homeRouter);
@@ -39,20 +41,6 @@ mongoose.connect("mongodb://localhost:27017/usersdb", { useNewUrlParser: true },
     });
 });
 
-/*ar expressWs = require('express-ws')(app);
-
-
-var processWs=require('./processWs.js');
-
-app.ws('/', function(ws, req) {
- processWs(ws,req);
-});
-
-app.ws('/operator', (ws, req) => {
-	processWs(ws,req);
-});
-
-app.listen(8080);*/
 
  		/*if ((message.writer=="anon")&&(!register)){
  			message.writer=uuidv4();

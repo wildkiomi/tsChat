@@ -1,4 +1,4 @@
-var clientSockets=require('./socketsMap.js');
+var clientSockets=require('../models/socketsMap.js');
 module.exports=function wsSend(time,writer,value,toWho) {
 	if (clientSockets.get(toWho)!=undefined){
 		var wsWho=clientSockets.get(toWho);

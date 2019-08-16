@@ -1,8 +1,7 @@
 var wsSend=require('./sendMessage.js');
-var clientSockets=require('./socketsMap.js');
+var clientSockets=require('../models/socketsMap.js');
 
 module.exports=function processWs(ws,req){
-
 console.log("connected new WebSocket");
 	var register=false;
  	ws.on('message', function(message) {
@@ -17,9 +16,9 @@ console.log("connected new WebSocket");
  			wsSend(message.time,message.writer,message.value,message.toWho);
  		}
 	});
-
+/*
 	ws.on('close', function() {
         console.log('The connection was closed!');
-    });
+    });*/
 
 };

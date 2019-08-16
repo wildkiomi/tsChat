@@ -11,9 +11,8 @@ var text;
 var initObj={};
 var user={};
 
-ws = new WebSocket("ws://localhost:8080");
-  console.log("connect");
-  ws.onopen=function(e){console.log("connected to server")};
+ws = new WebSocket("ws://localhost:8080/chat");
+ws.onopen=function(e){console.log("connected to server")};
 
 
 var addMessageToDb;

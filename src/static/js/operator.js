@@ -1,4 +1,4 @@
-var ws = new WebSocket("ws://localhost:8080");
+var ws = new WebSocket("ws://localhost:8080/chat/operator");
 var order="";
 
 ws.onopen=function(e){
@@ -88,6 +88,11 @@ ws.onmessage = function(e){
    var message = JSON.parse(e.data);
    printMessage(message.time,message.writer,message.value);
  };
+
+ws.onclose=function(e){
+   changeUserStatus("offline");
+   console.log("connection closed");
+};
 
 function searchUser(){
 	var searchString=document.getElementById("search").value;
